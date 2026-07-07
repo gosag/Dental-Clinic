@@ -213,7 +213,7 @@ function Hero() {
             See My Services
           </a>
           <a
-            href="#work"
+            href="https://gosagirma.me"
             className="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-md border border-[rgba(232,239,246,0.25)] text-[#E8EFF6] font-medium gg-display hover:border-[#5FD3DA] hover:text-[#5FD3DA] transition-colors"
           >
             View My Work
@@ -437,22 +437,43 @@ function HowItWorks() {
 function Contact() {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: "-80px" })
-  const [form, setForm] = useState({ name: "", email: "", message: "" })
+  const [form, setForm] = useState({ name: "", contact: "", message: "" })
   const [submitted, setSubmitted] = useState(false)
   const [errors, setErrors] = useState({})
+    useEffect(() => {
+        document.title = "GOSA GIRMA · Full-Stack Developer"
+    }, [])
 
   function validate() {
     const e = {}
     if (!form.name.trim()) e.name = "Required"
-    if (!form.email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) e.email = "Invalid email"
+    const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.contact.trim())
+    const isPhone = /^[\d+\s()-]{7,}$/.test(form.contact.trim())
+    if (!isEmail && !isPhone) e.contact = "Enter a valid phone or email"
     if (!form.message.trim()) e.message = "Required"
     setErrors(e)
     return Object.keys(e).length === 0
   }
 
-  function handleSubmit(ev) {
+  async function handleSubmit(ev) {
     ev.preventDefault()
     if (!validate()) return
+    const formData = new FormData()
+    formData.append("name", form.name)
+    formData.append("contact", form.contact)
+    formData.append("message", form.message)
+    const res= await fetch("https://formspree.io/f/mpqgeqno", {
+      method: "POST",
+      body: formData,
+      headers: { Accept: "application/json" },
+    })
+    if (!res.ok) {
+        console.log("Form submission failed:", res.statusText);
+        alert("Form submission failed. Please try again later.");
+        return;
+    }
+    const data = await res.json()
+    console.log("Form submission successful:", data)
     setSubmitted(true)
   }
 
@@ -489,7 +510,7 @@ function Contact() {
                 &gt; message received
               </p>
               <p className="mt-2 text-[#8CA0B5] text-sm">
-                I'll get back to you shortly at the email you provided.
+                I'll get back to you shortly at the phone number or email you provided.
               </p>
             </div>
           ) : (
@@ -511,16 +532,16 @@ function Contact() {
 
               <div>
                 <label className="gg-mono text-[10px] tracking-[0.2em] uppercase text-[#5A6E82]">
-                  Email
+                  Phone or Email
                 </label>
                 <input
                   className="gg-input w-full h-11 mt-1.5 px-3 rounded-md text-sm"
-                  placeholder="you@example.com"
-                  value={form.email}
-                  onChange={(e) => setForm({ ...form, email: e.target.value })}
+                  placeholder="+251 XXX XXX XXX or you@example.com"
+                  value={form.contact}
+                  onChange={(e) => setForm({ ...form, contact: e.target.value })}
                 />
-                {errors.email && (
-                  <div className="text-xs text-[#F2846A] mt-1">{errors.email}</div>
+                {errors.contact && (
+                  <div className="text-xs text-[#F2846A] mt-1">{errors.contact}</div>
                 )}
               </div>
 
