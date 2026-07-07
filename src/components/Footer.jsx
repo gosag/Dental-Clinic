@@ -17,11 +17,11 @@ export default function Footer({ clinic }) {
   const { developer, footer } = clinic.ui
 
   return (
-    <footer className="bg-[#070e16] px-4 py-12 text-gray-400">
-      <div className="mx-auto flex max-w-5xl flex-col gap-8 md:flex-row md:items-start">
+    <footer className="bg-[#070e16] px-4 py-12 text-slate-400">
+      <div className="mx-auto flex max-w-6xl flex-col gap-8 md:flex-row md:items-start">
         <div className="flex-1">
           <p className="font-display text-xl text-white">{clinic.name}</p>
-          <p className="mt-2 text-sm">{clinic.tagline}</p>
+          <p className="mt-2 max-w-sm text-sm leading-relaxed">{clinic.tagline}</p>
         </div>
 
         <Separator orientation="vertical" className="hidden bg-white/10 md:block md:h-auto md:self-stretch" />
@@ -44,7 +44,7 @@ export default function Footer({ clinic }) {
         <Separator orientation="vertical" className="hidden bg-white/10 md:block md:h-auto md:self-stretch" />
 
         <div className="flex-1">
-          <p className="text-sm">
+          <p className="text-sm leading-relaxed">
             {footer.siteBy}
             <a
               href={developer.url}
@@ -58,7 +58,7 @@ export default function Footer({ clinic }) {
         </div>
       </div>
 
-      <div className="mx-auto mt-8 max-w-5xl border-t border-white/10 pt-6 text-center text-xs">
+      <div className="mx-auto mt-8 max-w-6xl border-t border-white/10 pt-6 text-center text-xs text-slate-500">
         © {year} {clinic.name}. {footer.previewNote}
       </div>
     </footer>

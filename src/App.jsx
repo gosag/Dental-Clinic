@@ -20,7 +20,7 @@ export default function App() {
   }, [])
 
   return (
-    <div className="font-sans text-gray-800 bg-white antialiased">
+    <div className="relative overflow-x-hidden font-sans text-gray-800 antialiased">
       <DemoRibbon clinic={clinic} />
       <Navbar clinic={clinic} />
       <Hero clinic={clinic} />

@@ -124,9 +124,15 @@
     @apply border-border outline-ring/50;
     }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
+    background:
+      radial-gradient(circle at top left, rgba(26, 107, 138, 0.12), transparent 28%),
+      radial-gradient(circle at bottom right, rgba(26, 107, 138, 0.08), transparent 24%),
+      linear-gradient(180deg, #ffffff 0%, #f8fbfc 56%, #eef6f8 100%);
+    background-attachment: fixed;
+    min-height: 100vh;
     }
   html {
-    @apply font-sans;
+    @apply font-sans scroll-smooth;
     }
 }

@@ -14,7 +14,7 @@ function FaqTrigger({ className, children, ...props }) {
     <AccordionPrimitive.Header className="flex">
       <AccordionPrimitive.Trigger
         className={cn(
-          "group flex flex-1 items-center justify-between py-4 text-left text-sm font-medium transition-all outline-none hover:underline",
+          "group flex flex-1 items-center justify-between py-5 text-left text-sm font-medium text-slate-900 transition-all outline-none",
           className
         )}
         {...props}
@@ -33,9 +33,9 @@ function FaqTrigger({ className, children, ...props }) {
 
 function FaqItem({ item, index }) {
   return (
-    <AccordionItem value={`item-${index}`}>
+    <AccordionItem value={`item-${index}`} className="rounded-2xl border border-slate-200 bg-white px-5 shadow-sm transition-shadow data-[state=open]:shadow-md">
       <FaqTrigger>{item.q}</FaqTrigger>
-      <AccordionContent className="text-sm leading-relaxed text-gray-500">
+      <AccordionContent className="pb-5 text-sm leading-relaxed text-slate-500">
         {item.a}
       </AccordionContent>
     </AccordionItem>
@@ -55,8 +55,8 @@ export default function FAQ({ clinic }) {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
-        <h2 className="text-center font-display text-3xl sm:text-4xl">{title}</h2>
-        <Accordion type="single" collapsible className="mx-auto mt-10 max-w-2xl">
+        <h2 className="text-center font-display text-3xl font-bold tracking-tight sm:text-4xl">{title}</h2>
+        <Accordion type="single" collapsible className="mx-auto mt-10 max-w-2xl space-y-4">
           {clinic.faq.map((item, index) => (
             <FaqItem key={item.q} item={item} index={index} />
           ))}
