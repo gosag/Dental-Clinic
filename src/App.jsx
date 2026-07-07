@@ -1,5 +1,6 @@
 import { useEffect } from "react"
-import clinic from "./data/clinic.js"
+import { Routes, Route, useParams } from "react-router-dom"
+import { getClinicBySlug } from "./data/clinics"
 import DemoRibbon from "./components/DemoRibbon.jsx"
 import Navbar from "./components/Navbar.jsx"
 import Hero from "./components/Hero.jsx"
@@ -12,12 +13,23 @@ import FAQ from "./components/FAQ.jsx"
 import FindUs from "./components/FindUs.jsx"
 import Footer from "./components/Footer.jsx"
 
-export default function App() {
+/**
+ * ClinicPage Component
+ * Renders the full landing page with clinic-specific data
+ * Accepts clinic data as prop or fetches from URL params
+ */
+function ClinicPage({ clinic: propClinic }) {
+  const { clinicSlug } = useParams()
+  
+  // Determine which clinic to display
+  const clinic = propClinic || getClinicBySlug(clinicSlug)
+
   useEffect(() => {
+    // Update document title and CSS variables for branding
     document.documentElement.style.setProperty("--accent", clinic.accentColor)
     document.documentElement.style.setProperty("--accent-light", clinic.accentColorLight)
     document.title = clinic.name
-  }, [])
+  }, [clinic])
 
   return (
     <div className="relative overflow-x-hidden font-sans text-gray-800 antialiased">
@@ -33,5 +45,17 @@ export default function App() {
       <FindUs clinic={clinic} />
       <Footer clinic={clinic} />
     </div>
+  )
+}
+
+export default function App() {
+  return (
+    <Routes>
+      {/* Default homepage route with Smile Care clinic */}
+      <Route path="/" element={<ClinicPage />} />
+      
+      {/* Dynamic preview route for any clinic slug */}
+      <Route path="/preview/:clinicSlug" element={<ClinicPage />} />
+    </Routes>
   )
 }

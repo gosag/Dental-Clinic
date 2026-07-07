@@ -50,7 +50,6 @@ export default function Hero({ clinic }) {
           variants={item}
           className="mx-auto mt-6 max-w-2xl text-lg font-light leading-relaxed text-slate-300 sm:text-xl md:text-2xl"
         >
-              className="h-12 w-full rounded-full bg-linear-to-r from-accent to-accent/80 px-8 font-semibold text-white transition-all duration-200 hover:shadow-2xl hover:shadow-accent/40 sm:w-auto"
         </motion.p>
 
         <motion.div
