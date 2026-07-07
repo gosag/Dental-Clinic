@@ -56,6 +56,7 @@ export default function App() {
       
       {/* Dynamic preview route for any clinic slug */}
       <Route path="/preview/:clinicSlug" element={<ClinicPage />} />
+      <Route path="*" element={<div className="flex min-h-screen items-center justify-center text-2xl font-semibold text-gray-600">404 - Page Not Found</div>} />
     </Routes>
   )
 }
