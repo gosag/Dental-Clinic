@@ -12,6 +12,7 @@ import Testimonials from "./components/Testimonials.jsx"
 import FAQ from "./components/FAQ.jsx"
 import FindUs from "./components/FindUs.jsx"
 import Footer from "./components/Footer.jsx"
+import HomePage from "./components/HomePage.jsx"
 
 /**
  * ClinicPage Component
@@ -52,7 +53,7 @@ export default function App() {
   return (
     <Routes>
       {/* Default homepage route with Smile Care clinic */}
-      <Route path="/" element={<ClinicPage />} />
+      <Route path="/" element={<HomePage />} />
       
       {/* Dynamic preview route for any clinic slug */}
       <Route path="/preview/:clinicSlug" element={<ClinicPage />} />
