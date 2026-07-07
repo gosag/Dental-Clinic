@@ -439,6 +439,7 @@ function Contact() {
   const inView = useInView(ref, { once: true, margin: "-80px" })
   const [form, setForm] = useState({ name: "", contact: "", message: "" })
   const [submitted, setSubmitted] = useState(false)
+  const [isPhoneOrEmail, setIsPhoneOrEmail] = useState("")
   const [errors, setErrors] = useState({})
     useEffect(() => {
         document.title = "GOSA GIRMA · Full-Stack Developer"
@@ -449,6 +450,8 @@ function Contact() {
     if (!form.name.trim()) e.name = "Required"
     const isEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.contact.trim())
     const isPhone = /^[\d+\s()-]{7,}$/.test(form.contact.trim())
+    if(isEmail) setIsPhoneOrEmail("email")
+    else if(isPhone) setIsPhoneOrEmail("phone")
     if (!isEmail && !isPhone) e.contact = "Enter a valid phone or email"
     if (!form.message.trim()) e.message = "Required"
     setErrors(e)
@@ -510,7 +513,7 @@ function Contact() {
                 &gt; message received
               </p>
               <p className="mt-2 text-[#8CA0B5] text-sm">
-                I'll get back to you shortly at the phone number or email you provided.
+                I'll get back to you shortly at the {isPhoneOrEmail} you provided.
               </p>
             </div>
           ) : (
