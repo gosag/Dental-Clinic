@@ -13,25 +13,27 @@ import FAQ from "./components/FAQ.jsx"
 import FindUs from "./components/FindUs.jsx"
 import Footer from "./components/Footer.jsx"
 import HomePage from "./components/HomePage.jsx"
+import { Navigate } from "react-router-dom"
 
+import clinics from "./data/clinics"
 /**
  * ClinicPage Component
  * Renders the full landing page with clinic-specific data
  * Accepts clinic data as prop or fetches from URL params
  */
 function ClinicPage({ clinic: propClinic }) {
-  const { clinicSlug } = useParams()
-  
-  // Determine which clinic to display
-  const clinic = propClinic || getClinicBySlug(clinicSlug)
+   const { clinicSlug } = useParams()
+  const clinic = getClinicBySlug(clinicSlug) || propClinic
+  const isThere= clinics[clinicSlug]
+  if (!clinic || !isThere) {
+    return <Navigate to="/" replace />
+  }
 
   useEffect(() => {
-    // Update document title and CSS variables for branding
     document.documentElement.style.setProperty("--accent", clinic.accentColor)
     document.documentElement.style.setProperty("--accent-light", clinic.accentColorLight)
     document.title = clinic.name
   }, [clinic])
-
   return (
     <div className="relative overflow-x-hidden font-sans text-gray-800 antialiased">
       <DemoRibbon clinic={clinic} />

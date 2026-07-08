@@ -17,12 +17,17 @@ function getInitials(name) {
 export default function Doctor({ clinic }) {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: "-80px" })
+  if(!clinic.doctor){
+    return
+  }
   const { eyebrow } = clinic.ui.sections.doctor
   const credentials = clinic.doctor.credentials
     .split(/[—,]/)
     .map((part) => part.trim())
     .filter(Boolean)
-
+  if(!clinic.doctor || !clinic.doctor,name.length){
+    return
+  }
   return (
     <section id="doctor" className="bg-white px-4 py-16 sm:px-6 sm:py-24">
       <div ref={ref} className="mx-auto grid max-w-5xl grid-cols-1 items-center gap-10 md:grid-cols-2 md:gap-16">
@@ -32,7 +37,7 @@ export default function Doctor({ clinic }) {
           transition={{ duration: 0.5, ease: "easeOut" }}
           className="relative"
         >
-          <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-br from-accent/12 via-transparent to-accent-light blur-2xl" />
+          <div className="absolute -inset-4 -z-10 rounded-[2rem] bg-linear-to-br from-accent/12 via-transparent to-accent-light blur-2xl" />
           {clinic.doctor.photo ? (
             <img
               src={clinic.doctor.photo}
@@ -40,7 +45,7 @@ export default function Doctor({ clinic }) {
               className="aspect-square w-full rounded-[1.75rem] object-cover shadow-[0_24px_80px_-36px_rgba(15,25,35,0.35)]"
             />
           ) : (
-            <div className="flex aspect-square w-full items-center justify-center rounded-[1.75rem] bg-gradient-to-br from-accent to-[#0f5470] shadow-[0_24px_80px_-36px_rgba(15,25,35,0.35)]">
+            <div className="flex aspect-square w-full items-center justify-center rounded-[1.75rem] bg-linear-to-br from-accent to-[#0f5470] shadow-[0_24px_80px_-36px_rgba(15,25,35,0.35)]">
               <span className="font-display text-7xl text-white">
                 {getInitials(clinic.doctor.name)}
               </span>

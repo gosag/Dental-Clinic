@@ -113,12 +113,12 @@ export const CLINICS = {
     accentColor: "#D4A574",
     accentColorLight: "#FFF5ED",
 
-    doctor: {
+   /*  doctor: {
       name: "Dr. Kebede Alemu",
       credentials: "DDS, University of Addis Ababa — 15 years experience",
       bio: "Dr. Alemu is a specialist in cosmetic and restorative dentistry. With over 15 years of practice, he's committed to delivering Hollywood-smile results with the utmost care and precision.",
       photo: "",
-    },
+    }, */
 
     services: [
       { name: "Cosmetic Whitening", description: "Advanced laser whitening for a dazzling, natural-looking smile." },
@@ -206,7 +206,7 @@ export const CLINICS = {
  * @returns {object} Clinic data object, or default clinic if slug not found
  */
 export function getClinicBySlug(slug) {
-  return CLINICS[slug] || CLINICS["smile-care"]
+  return CLINICS[slug]
 }
 
 /**

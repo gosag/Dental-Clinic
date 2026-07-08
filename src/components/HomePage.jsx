@@ -339,7 +339,7 @@ function HowItWorks() {
           <svg
             viewBox="0 0 800 4"
             preserveAspectRatio="none"
-            className="absolute left-0 right-0 top-6 w-full h-[2px]"
+            className="absolute left-0 right-0 top-6 w-full h-0.5"
           >
             <motion.line
               x1="0"
@@ -385,7 +385,7 @@ function HowItWorks() {
           <svg
             viewBox="0 4 4 400"
             preserveAspectRatio="none"
-            className="absolute left-[22px] top-0 w-[2px] h-full"
+            className="absolute left-5.5 top-0 w-0.5 h-full"
           >
             <motion.line
               x1="2"
@@ -553,7 +553,7 @@ function Contact() {
                   Message
                 </label>
                 <textarea
-                  className="gg-input w-full mt-1.5 px-3 py-2.5 rounded-md text-sm min-h-[110px] resize-none"
+                  className="gg-input w-full mt-1.5 px-3 py-2.5 rounded-md text-sm min-h-27.5 resize-none"
                   placeholder="Tell me about your project"
                   value={form.message}
                   onChange={(e) => setForm({ ...form, message: e.target.value })}
