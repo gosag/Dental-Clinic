@@ -15,7 +15,7 @@ import Footer from "./components/Footer.jsx"
 import HomePage from "./components/HomePage.jsx"
 import { Navigate } from "react-router-dom"
 
-import clinics from "./data/clinics"
+import {CLINICS} from "./data/clinics"
 /**
  * ClinicPage Component
  * Renders the full landing page with clinic-specific data
@@ -24,7 +24,7 @@ import clinics from "./data/clinics"
 function ClinicPage({ clinic: propClinic }) {
    const { clinicSlug } = useParams()
   const clinic = getClinicBySlug(clinicSlug) || propClinic
-  const isThere= clinics[clinicSlug]
+const isThere = Object.prototype.hasOwnProperty.call(CLINICS, clinicSlug)
   if (!clinic || !isThere) {
     return <Navigate to="/" replace />
   }
