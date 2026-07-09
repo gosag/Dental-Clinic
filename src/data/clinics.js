@@ -257,6 +257,274 @@ export const CLINICS = {
       footer: { siteBy: "Site by ", previewNote: "Preview demo." }
     }
   },
+  
+  // ==========================================
+  // CLIENT 1: DR. AMIR DENTAL CLINIC
+  // ==========================================
+  "dr-amir-dental": {
+    slug: "dr-amir-dental",
+    name: "Dr. Amir Dental Clinic",
+    tagline: "Your Smile, Our Passion in Adama.",
+    address: "Bole Road Area, G7WC+M7H, Adama, Ethiopia",
+    phone: "+251 91 345 6789", // Placeholder for pitching
+    whatsapp: "251913456789",
+    email: "info@dramirdental.com",
+    hours: "Mon-Sat: 8:00 AM - 7:30 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=dr.+amir+dental+clinic,Adama&output=embed",
+    accentColor: "#059669", // Emerald Green theme
+    accentColorLight: "#D1FAE5",
+    doctor: {
+      name: "Dr. Amir",
+      credentials: "DDS — Cosmetic & Restorative Dentistry",
+      bio: "Committed to delivering world-class dental restorations, cosmetic makeovers, and maintaining healthy smiles for life.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Amir"
+    },
+    services: [
+      { name: "Cosmetic Veneers", description: "Custom porcelain and composite veneers designed to perfect your smile line." },
+      { name: "Teeth Whitening", description: "Advanced in-office bleaching systems for rapid and dramatic results." },
+      { name: "Root Canal Therapy", description: "Pain-free endodontic procedures to save damaged or infected teeth." },
+      { name: "Crowns & Bridges", description: "Premium durable caps to perfectly restore structurally compromised teeth." },
+      { name: "Regular Scaling", description: "Thorough plaque and tartar removal for deep periodontal health." },
+      { name: "Emergency Dentistry", description: "Immediate relief for severe toothaches, trauma, or unexpected injuries." }
+    ],
+    whyUs: [
+      { point: "Highly rated personalized patient care" },
+      { point: "State-of-the-art cosmetic treatments" },
+      { point: "Convenient central Adama location" },
+      { point: "Fast response via WhatsApp support" }
+    ],
+    testimonials: [
+      { name: "Abebe K.", stars: 5, text: "Dr. Amir fixed my front tooth perfectly. The cosmetic result exceeded my expectations!" },
+      { name: "Marta G.", stars: 4, text: "Very precise work on my crown. Highly professional environment and clean setup." },
+      { name: "Yonas S.", stars: 5, text: "Cleanest clinic in Adama. No long wait times if you message them beforehand." }
+    ],
+    faq: [
+      { q: "Do you offer teeth whitening?", a: "Yes, we offer both in-office professional whitening and custom take-home kits." },
+      { q: "Are root canals painful?", a: "Not at all. We use precise local anesthesia to ensure the entire procedure is completely comfortable." },
+      { q: "Do you take walk-ins?", a: "Yes, we accept walk-in patients, but scheduling online guarantees you see the doctor immediately." },
+      { q: "How long do veneers last?", a: "With proper care and routine checkups, our high-quality veneers can last 10 to 15 years." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  // ==========================================
+  // CLIENT 2: NANO DENTAL & MAXILLOFACIAL CENTER
+  // ==========================================
+  "nano-dental": {
+    slug: "nano-dental",
+    name: "Nano Dental and Maxillofacial Center",
+    tagline: "Advanced Maxillofacial and Dental Care Around the Clock.",
+    address: "17 Megbiya, Adama, Ethiopia",
+    phone: "+251 96 280 2801",
+    whatsapp: "251962802801",
+    email: "info@nanodentalcenter.com",
+    hours: "Open 24 hours / 7 days a week",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Nano+dental+and+maxillofacial+center,Adama&output=embed",
+    accentColor: "#06B6D4", // Modern Cyan/Teal theme
+    accentColorLight: "#CFFAFE",
+    doctor: {
+      name: "Dr. Tolera",
+      credentials: "DDS, MD — Oral & Maxillofacial Surgeon",
+      bio: "Specializing in complex extractions, jaw reconstructions, and advanced surgical interventions with a gentle approach.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Tolera"
+    },
+    services: [
+      { name: "Maxillofacial Surgery", description: "Expert surgical care for jaw alignment, facial trauma, and complex structures." },
+      { name: "Wisdom Teeth Extraction", description: "Safe, surgical removal of impacted or painful third molars." },
+      { name: "Dental Implants", description: "Permanent, premium titanium posts to securely replace missing teeth roots." },
+      { name: "Emergency Trauma Care", description: "24/7 immediate assistance for facial injuries and dental fractures." },
+      { name: "Bone Grafting", description: "Rebuilding jaw bone density to fully support future dental implants." },
+      { name: "General Consultations", description: "In-depth diagnostic imaging and treatment mapping for oral health." }
+    ],
+    whyUs: [
+      { point: "Open 24 hours for urgent dental emergencies" },
+      { point: "Specialized oral and maxillofacial surgeons" },
+      { point: "Advanced surgical theater and imaging" },
+      { point: "Seamless booking and premium care standards" }
+    ],
+    testimonials: [
+      { name: "Fikru T.", stars: 5, text: "They saved my jaw after a bad accident late at night. The 24/7 service is literally a lifesaver." },
+      { name: "Selam W.", stars: 5, text: "Had my wisdom teeth pulled here. Extremely professional surgical team, felt absolutely zero pain." },
+      { name: "Daniel M.", stars: 5, text: "High tech equipment and very skilled specialists. Best spot for implants in Adama." }
+    ],
+    faq: [
+      { q: "Are you really open 24/7?", a: "Yes! We run a full round-the-clock emergency desk for dental trauma and urgent surgical needs." },
+      { q: "What is maxillofacial surgery?", a: "It focuses on treating diseases, injuries, and defects in the head, neck, face, and jaws." },
+      { q: "How long does an implant take?", a: "The placement takes about an hour, followed by a few months of healing before placing the final crown." },
+      { q: "Do I need a referral for surgery?", a: "No, you can book a direct consultation with our surgeons anytime via phone or WhatsApp." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  // ==========================================
+  // CLIENT 3: DR. ABEL SPECIALITY DENTAL CLINIC
+  // ==========================================
+  "dr-abel-dental": {
+    slug: "dr-abel-dental",
+    name: "Dr. Abel Speciality Dental Clinic",
+    tagline: "Specialized Orthodontic and Advanced Care in Dembela.",
+    address: "Franko, Woreda 09, Dembela, Adama, Ethiopia",
+    phone: "+251 91 224 7740",
+    whatsapp: "251912247740",
+    email: "contact@drabeldental.com",
+    hours: "Mon-Sun: 8:00 AM - 8:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=DR+ABEL+SPECIALITY+DENTAL+CLINIC,Adama&output=embed",
+    accentColor: "#4F46E5", // Indigo theme
+    accentColorLight: "#E0E7FF",
+    doctor: {
+      name: "Dr. Abel",
+      credentials: "DDS — Orthodontics & Pediatric Specialist",
+      bio: "Dedicated to creating beautiful, straight smiles for patients of all ages using modern braces and custom aligner techniques.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Abel"
+    },
+    services: [
+      { name: "Orthodontics / Braces", description: "Traditional metal and modern clear ceramic braces to correct teeth alignment." },
+      { name: "Pediatric Care", description: "Specialized gentle dentistry to build early positive dental habits for kids." },
+      { name: "Laser Dentistry", description: "Minimally invasive gum therapies performed precisely using advanced dental lasers." },
+      { name: "Full Mouth Dentures", description: "Custom-crafted partial and full dentures designed to perfectly restore natural function." },
+      { name: "Composite Fillings", description: "Beautiful, seamless tooth-colored fillings for structural tooth restoration." },
+      { name: "Fluoride Treatment", description: "Deep mineral enamel fortification to actively shield teeth from aggressive decay." }
+    ],
+    whyUs: [
+      { point: "Expert orthodontic specialist on-site" },
+      { point: "Child-friendly, calming clinical environment" },
+      { point: "Advanced dental laser technology" },
+      { point: "Open all week long for continuous care" }
+    ],
+    testimonials: [
+      { name: "Kedir A.", stars: 5, text: "Got my braces done here. Dr. Abel checks everything thoroughly and the progress is amazing." },
+      { name: "Meron D.", stars: 5, text: "My daughter used to fear dentists, but she absolutely loves coming here. Incredible patience!" },
+      { name: "Tariku B.", stars: 4, text: "Top-tier cleanliness and modern layout. Booking ahead on WhatsApp makes everything fast." }
+    ],
+    faq: [
+      { q: "At what age should kids see an orthodontist?", a: "We recommend an initial orthodontic screening around age 7 to track jaw development." },
+      { q: "How long does braces treatment last?", a: "Depending on complexity, it usually ranges anywhere from 12 to 24 months." },
+      { q: "Do you offer clear brackets?", a: "Yes, we provide aesthetic ceramic clear braces that blend right in with your teeth." },
+      { q: "Is there parking available?", a: "Yes, there is accessible street and lot parking directly in front of the Dembela location." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  }
+
 }
 
 /**

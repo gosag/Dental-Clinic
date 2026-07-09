@@ -43,7 +43,7 @@ export function BookingFormWrapper({ clinic, submitted, name, children }) {
   const inView = useInView(ref, { once: true, margin: "-80px" })
 
   return (
-    <section id="book" className="bg-gradient-to-b from-white to-slate-50 px-4 py-16 sm:px-6 sm:py-24">
+    <section id="book" className="bg-linear-to-b from-white to-slate-50 px-4 py-16 sm:px-6 sm:py-24">
       <motion.h2
         ref={ref}
         initial={{ opacity: 0, y: 24 }}

@@ -1,5 +1,5 @@
 import { motion } from "motion/react"
-import { CheckCircle2, MessageCircle, Phone } from "lucide-react"
+import { CheckCircle2, MessageCircle, Phone, Smile, Star } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 
@@ -16,92 +16,147 @@ const item = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 }
 
+const HERO_IMAGE =
+  "https://images.unsplash.com/photo-1548382131-e0ebb1f0cdea?auto=format&fit=crop&w=1200&q=80"
+
 export default function Hero({ clinic }) {
   return (
     <section
       id="hero"
-      className="relative flex min-h-[92vh] items-center justify-center overflow-hidden bg-linear-to-br from-navy via-[#12202c] to-navy px-4 py-20 text-white before:absolute before:inset-0 before:bg-[repeating-linear-gradient(45deg,rgba(255,255,255,0.04)_0px,rgba(255,255,255,0.04)_1px,transparent_1px,transparent_12px)] before:bg-[size:64px_64px]"
+      className="relative overflow-hidden bg-[#FBFAF7] px-4 py-16 sm:py-20 lg:py-28"
     >
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 right-0 h-96 w-96 rounded-full bg-accent/15 blur-3xl" />
-        <div className="absolute -bottom-40 left-0 h-96 w-96 rounded-full bg-cyan-400/10 blur-3xl" />
+      {/* soft ambient shapes, no grid/blueprint pattern */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
+        <div className="absolute -bottom-32 -left-24 h-80 w-80 rounded-full bg-navy/5 blur-3xl" />
       </div>
-      <motion.div
-        variants={container}
-        initial="hidden"
-        animate="visible"
-        className="relative mx-auto max-w-5xl text-center"
-      >
+
+      <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
+        {/* text column */}
         <motion.div
-          variants={item}
-          className="mx-auto mb-6 inline-flex items-center rounded-full border border-white/15 bg-white/8 px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-white/75 backdrop-blur-sm"
+          variants={container}
+          initial="hidden"
+          animate="visible"
+          className="text-center lg:text-left"
         >
-          Modern dental care in Adama
+          <motion.div
+            variants={item}
+            className="mx-auto mb-5 inline-flex items-center gap-1.5 rounded-full border border-navy/10 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-navy/70 shadow-sm lg:mx-0"
+          >
+            <Smile className="size-3.5 text-accent" />
+            Modern dental care in {clinic.city || "Adama"}
+          </motion.div>
+
+          <motion.h1
+            variants={item}
+            className="font-display text-4xl font-bold leading-[1.1] text-navy sm:text-5xl lg:text-6xl"
+          >
+            {clinic.name}
+          </motion.h1>
+
+          <motion.p
+            variants={item}
+            className="mx-auto mt-5 max-w-md text-base leading-relaxed text-navy/60 sm:text-lg lg:mx-0"
+          >
+            {clinic.tagline || "Comfortable, modern dentistry for your whole family."}
+          </motion.p>
+
+          <motion.div
+            variants={item}
+            className="mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row sm:justify-center lg:justify-start"
+          >
+            <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+              <Button
+                asChild
+                className="h-12 w-full rounded-full bg-accent px-8 font-semibold text-white shadow-lg shadow-accent/25 hover:bg-accent/90 sm:w-auto"
+              >
+                <a href={`tel:${clinic.phone}`}>
+                  <Phone className="mr-2 size-5" />
+                  {clinic.ui.hero.callNow}
+                </a>
+              </Button>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }}>
+              <Button
+                asChild
+                className="h-12 w-full rounded-full border border-navy/15 bg-white px-8 font-semibold text-navy hover:bg-navy/5 sm:w-auto"
+              >
+                <a
+                
+                  href={`https://wa.me/${clinic.whatsapp}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <MessageCircle className="mr-2 size-5 text-accent" />
+                  {clinic.ui.hero.whatsappUs}
+                </a>
+              </Button>
+            </motion.div>
+          </motion.div>
+
+          <motion.div
+            variants={item}
+            className="mt-8 flex flex-wrap justify-center gap-2.5 lg:justify-start"
+          >
+            {clinic.whyUs.slice(0, 3).map(({ point }) => (
+              <Badge
+                key={point}
+                className="rounded-full border border-navy/10 bg-white px-3 py-1.5 text-xs font-medium text-navy/80 hover:bg-navy/5 sm:text-sm"
+              >
+                <CheckCircle2 className="mr-1.5 size-4 shrink-0 text-accent" />
+                {point}
+              </Badge>
+            ))}
+          </motion.div>
         </motion.div>
 
-        <motion.h1
-          variants={item}
-          className="mx-auto max-w-4xl font-display text-5xl font-bold leading-tight bg-linear-to-r from-white via-white to-accent/80 bg-clip-text text-transparent sm:text-6xl md:text-7xl lg:text-8xl"
-        >
-          {clinic.name}
-        </motion.h1>
-
-        <motion.p
-          variants={item}
-          className="mx-auto mt-6 max-w-2xl text-lg font-light leading-relaxed text-slate-300 sm:text-xl md:text-2xl"
-        >
-        </motion.p>
-
+        {/* image column */}
         <motion.div
-          variants={item}
-          className="mt-10 flex w-full flex-col gap-4 sm:w-auto sm:flex-row sm:justify-center"
+          initial={{ opacity: 0, scale: 0.94 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+          className="relative mx-auto w-full max-w-sm lg:max-w-none"
         >
-          <Button
-            asChild
-            className="h-12 w-full rounded-full bg-linear-to-r from-accent to-accent/80 px-8 font-semibold text-white transition-all duration-200 hover:shadow-2xl hover:shadow-accent/40 sm:w-auto"
-          >
-            <a href={`tel:${clinic.phone}`}>
-              <Phone className="size-5 mr-2" />
-              {clinic.ui.hero.callNow}
-            </a>
-          </Button>
-          <Button
-            asChild
-            className="h-12 w-full rounded-full border border-white/25 bg-white/8 px-8 font-semibold text-white backdrop-blur-sm transition-all duration-200 hover:border-white/50 hover:bg-white/15 sm:w-auto"
-          >
-            <a
-              href={`https://wa.me/${clinic.whatsapp}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <MessageCircle className="size-5 mr-2" />
-              {clinic.ui.hero.whatsappUs}
-            </a>
-          </Button>
-        </motion.div>
+          {/* offset accent card behind photo — the crafted, human detail */}
+          <div
+            className="absolute inset-0 -rotate-3 bg-accent/25"
+            style={{ borderRadius: "62% 38% 55% 45% / 55% 45% 60% 40%" }}
+          />
 
-        <motion.div variants={item} className="mt-10 flex flex-wrap justify-center gap-3">
-          {clinic.whyUs.slice(0, 3).map(({ point }) => (
-            <Badge
-              key={point}
-              className="rounded-full border border-white/20 bg-white/10 px-3 py-1.5 text-xs text-white backdrop-blur-sm transition-all duration-200 hover:bg-white/20 sm:text-sm"
-            >
-              <CheckCircle2 className="mr-1.5 size-4 shrink-0" />
-              {point}
-            </Badge>
-          ))}
-        </motion.div>
-      </motion.div>
+          <motion.div
+            animate={{ y: [0, -10, 0] }}
+            transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+            className="relative aspect-4/5 overflow-hidden shadow-xl"
+            style={{ borderRadius: "62% 38% 55% 45% / 55% 45% 60% 40%" }}
+          >
+            <img
+              src={HERO_IMAGE}
+              alt={`Smiling patient at ${clinic.name}`}
+              className="h-full w-full object-cover"
+            />
+          </motion.div>
 
-      <motion.div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2"
-        animate={{ y: [0, 12, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      >
-        <div className="flex gap-2">
-          <div className="h-6 w-1 rounded-full bg-white/30" />
-        </div>
-      </motion.div>
+          {/* floating trust card */}
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.9 }}
+            className="absolute -bottom-4 left-2 flex items-center gap-2.5 rounded-2xl bg-white px-4 py-3 shadow-lg sm:-bottom-6 sm:left-4"
+          >
+            <div className="flex size-9 items-center justify-center rounded-full bg-accent/10">
+              <Star className="size-4 fill-accent text-accent" />
+            </div>
+            <div className="leading-tight">
+              <p className="text-sm font-bold text-navy">
+                {clinic.rating ?? "4.9"} rating
+              </p>
+              <p className="text-xs text-navy/50">
+                {clinic.reviewCount ?? "200"}+ happy patients
+              </p>
+            </div>
+          </motion.div>
+        </motion.div>
+      </div>
     </section>
   )
 }
