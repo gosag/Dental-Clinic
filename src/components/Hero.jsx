@@ -151,7 +151,7 @@ export default function Hero({ clinic }) {
                 {clinic.rating ?? "4.9"} rating
               </p>
               <p className="text-xs text-navy/50">
-                {clinic.reviewCount ?? "200"}+ happy patients
+                {clinic.reviewCount} and happy patients
               </p>
             </div>
           </motion.div>

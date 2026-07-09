@@ -7,25 +7,32 @@ const icons = [ShieldCheck, Calendar, MessageCircle, Heart]
 export default function WhyUs({ clinic }) {
   const ref = useRef(null)
   const inView = useInView(ref, { once: true, margin: "-80px" })
-  const { title } = clinic.ui.sections.whyUs
+  const { title, subtitle } = clinic.ui.sections.whyUs
 
   return (
-    <section id="why" className="bg-gradient-to-br from-navy via-[#0f2230] to-navy px-4 py-16 text-white sm:px-6 sm:py-24">
+    <section
+      id="why"
+      className="relative overflow-hidden bg-accent/5 px-4 py-16 sm:px-6 sm:py-24"
+    >
+      <div className="pointer-events-none absolute -top-20 right-0 h-72 w-72 rounded-full bg-accent/10 blur-3xl" />
+      <div className="pointer-events-none absolute -bottom-24 left-0 h-72 w-72 rounded-full bg-navy/5 blur-3xl" />
+
       <motion.h2
         ref={ref}
         initial={{ opacity: 0, y: 24 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.5, ease: "easeOut" }}
-        className="text-center font-display text-3xl sm:text-4xl"
+        className="relative text-center font-display text-3xl text-navy sm:text-4xl"
       >
         {title}
       </motion.h2>
 
-      <div className="mx-auto mt-4 max-w-3xl text-center text-sm leading-relaxed text-slate-300">
-        Everything is designed to make your visit faster, calmer, and easier to trust.
+      <div className="relative mx-auto mt-4 max-w-xl text-center text-sm leading-relaxed text-navy/60 sm:text-base">
+        {subtitle ||
+          "Every detail is designed around your comfort, from your first call to your last checkup."}
       </div>
 
-      <div className="mx-auto mt-10 grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="relative mx-auto mt-12 grid max-w-6xl grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {clinic.whyUs.map(({ point }, index) => {
           const Icon = icons[index] ?? ShieldCheck
           return (
@@ -34,10 +41,14 @@ export default function WhyUs({ clinic }) {
               initial={{ opacity: 0, y: 24 }}
               animate={inView ? { opacity: 1, y: 0 } : {}}
               transition={{ delay: index * 0.1, duration: 0.4, ease: "easeOut" }}
-              className="rounded-[1.5rem] border border-white/10 bg-white/6 p-6 backdrop-blur-sm transition-transform duration-200 hover:-translate-y-1 hover:bg-white/10"
+              className="rounded-3xl border border-navy/8 bg-white p-6 shadow-sm transition-all duration-200 hover:-translate-y-1 hover:shadow-md"
             >
-              <Icon className="mb-4 h-10 w-10 text-accent" />
-              <p className="text-base font-semibold leading-relaxed">{point}</p>
+              <div className="mb-4 flex size-12 items-center justify-center rounded-2xl bg-accent/10">
+                <Icon className="size-6 text-accent" />
+              </div>
+              <p className="text-base font-semibold leading-relaxed text-navy">
+                {point}
+              </p>
             </motion.div>
           )
         })}
