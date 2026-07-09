@@ -615,7 +615,7 @@ function Footer() {
                 to={`preview/${clinic.slug}`}
                 className="text-[#5A6E82] hover:text-[#5FD3DA] transition-colors"
               >
-                {clinic.name}
+                {clinic.name} And place: {clinic.address}
               </NavLink>
             )
           })}
