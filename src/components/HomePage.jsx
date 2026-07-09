@@ -581,10 +581,46 @@ function Contact() {
 /* ---------------------------------------------------------------
    Footer
 ----------------------------------------------------------------*/
+import { NavLink } from "react-router-dom"
+import { CLINICS } from "../data/clinics"
+
+import clinic from "@/data/clinic"
 function Footer() {
+ const newClinic = Object.values(CLINICS).filter(clinic => clinic.name && clinic.slug);
   const year = new Date().getFullYear()
+  const isAdmin = localStorage.getItem("isAdmin") === "true";
+  useEffect(() => {
+    if (isAdmin) {
+      console.log("Admin mode enabled. Clinics with names and slugs:");
+      if(newClinic.length === 0){
+        console.log("No clinics with names and slugs found.");
+      }
+      newClinic.forEach((clinic) => {
+        console.log(`Clinic Name: ${clinic.name}, Slug: ${clinic.slug}`);
+      });
+    }
+  }, [isAdmin])
   return (
     <footer className="py-8" style={{ background: "#070D17", borderTop: "1px solid rgba(95,211,218,0.10)" }}>
+      {isAdmin && (
+        <div className="flex flex-col ml-2">
+          {newClinic.map((clinic) => {
+
+            if(!clinic.name){
+              return null
+            }
+            return (
+              <NavLink
+                key={clinic.name}
+                to={`preview/${clinic.slug}`}
+                className="text-[#5A6E82] hover:text-[#5FD3DA] transition-colors"
+              >
+                {clinic.name}
+              </NavLink>
+            )
+          })}
+        </div>
+      )}
       <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3 gg-mono text-xs text-[#5A6E82]">
         <div>
           GOSA GIRMA © {year} ·{" "}
@@ -594,6 +630,7 @@ function Footer() {
         </div>
         <div className="tracking-wide">ADAMA, ETHIOPIA</div>
       </div>
+
     </footer>
   )
 }
