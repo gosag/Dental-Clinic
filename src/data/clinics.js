@@ -6,6 +6,7 @@ export const CLINICS = {
     name: "Hundaol Dental Clinic",
     tagline: "Exceptional Dental Care in the Heart of Adama.",
     address: "Main Highway (Near the Old Post Office / Posta Bet), Kebele 02, Adama, Ethiopia",
+    city: "Adama",
     phone: "+251 91 197 0772", 
     whatsapp: "251911970772",
     rating:"5",
@@ -95,6 +96,7 @@ export const CLINICS = {
     address: "Elemo Kiltu Street's Tana Mestewat Shopping Center 1st Floor, Near National building Shopping Mall, Adama, Ethiopia",
     phone: "+251 97 220 5858",
     whatsapp: "251972205858",
+    city: "Adama",
     email: "info@yourname.com",
     hours: "Mon-Sat: 8:30 AM - 6:30 PM, Sun: Closed",
     mapEmbedUrl: "https://maps.google.com/maps?q=Ana+Speciality+Dental+Clinic,Adama&output=embed",
@@ -184,6 +186,7 @@ export const CLINICS = {
     address: "Bole Road Area, G7WC+M7H, Adama, Ethiopia",
     phone: "+251 91 345 6789", // Placeholder for pitching
     whatsapp: "251913456789",
+    city: "Adama",
     email: "info@dramirdental.com",
     hours: "Mon-Sat: 8:00 AM - 7:30 PM",
     mapEmbedUrl: "https://maps.google.com/maps?q=dr.+amir+dental+clinic,Adama&output=embed",
@@ -273,6 +276,7 @@ export const CLINICS = {
     address: "17 Megbiya, Adama, Ethiopia",
     phone: "+251 96 280 2801",
     whatsapp: "251962802801",
+    city: "Adama",
     email: "info@nanodentalcenter.com",
     hours: "Open 24 hours / 7 days a week",
     mapEmbedUrl: "https://maps.google.com/maps?q=Nano+dental+and+maxillofacial+center,Adama&output=embed",
@@ -362,6 +366,7 @@ export const CLINICS = {
     address: "Franko, Woreda 09, Dembela, Adama, Ethiopia",
     phone: "+251 91 224 7740",
     whatsapp: "251912247740",
+    city: "Adama",
     email: "contact@drabeldental.com",
     hours: "Mon-Sun: 8:00 AM - 8:00 PM",
     mapEmbedUrl: "https://maps.google.com/maps?q=DR+ABEL+SPECIALITY+DENTAL+CLINIC,Adama&output=embed",
@@ -447,6 +452,7 @@ export const CLINICS = {
     address: "Bole, Atlas Road (Near European Union), Addis Ababa, Ethiopia",
     phone: "+251 91 123 4567",
     whatsapp: "251911234567",
+    city: "Addis Ababa",
     rating: "4.9",
     email: "contact@lucydental.com",
     hours: "Mon-Sat: 8:30 AM - 7:30 PM",
@@ -534,6 +540,7 @@ export const CLINICS = {
     address: "Jemo 1 (Near St. Michael Church), Addis Ababa, Ethiopia",
     phone: "+251 92 345 6789",
     whatsapp: "251923456789",
+    city: "Addis Ababa",
     rating: "4.8",
     email: "hello@kakudental.com",
     hours: "Mon-Sun: 8:00 AM - 8:00 PM",
@@ -621,6 +628,7 @@ export const CLINICS = {
     address: "Mebrat Hail Area, Kebele 04, Adama, Ethiopia",
     phone: "+251 93 456 7890",
     whatsapp: "251934567890",
+    city: "Adama",
     rating: "4.7",
     email: "info@familydentaladama.com",
     hours: "Mon-Sat: 8:00 AM - 7:00 PM",
@@ -708,6 +716,7 @@ export const CLINICS = {
     address: "Posta Bet Area, Near the Main Road, Adama, Ethiopia",
     phone: "+251 94 567 8901",
     whatsapp: "251945678901",
+    city: "Adama",
     rating: "4.9",
     email: "appointments@smilecareadama.com",
     hours: "Mon-Sun: 8:30 AM - 6:30 PM",
@@ -795,6 +804,7 @@ export const CLINICS = {
     address: "Central Square, Near Kuriftu Resort, Bishoftu, Ethiopia",
     phone: "+251 95 678 9012",
     whatsapp: "251956789012",
+    city: "Bishoftu",
     rating: "4.8",
     email: "care@bishoftudental.com",
     hours: "Mon-Sat: 8:00 AM - 6:00 PM",
@@ -882,6 +892,7 @@ export const CLINICS = {
     address: "Kebele 01, Main Road, Bishoftu, Ethiopia",
     phone: "+251 96 789 0123",
     whatsapp: "251967890123",
+    city: "Bishoftu",
     rating: "4.9",
     email: "contact@zemadental.com",
     hours: "Mon-Sun: 8:00 AM - 7:00 PM",
@@ -969,6 +980,7 @@ export const CLINICS = {
     phone: "+251 91 234 5678",
     whatsapp: "251912345678",
     rating: "4.8",
+    city: "Addis Ababa",
     email: "contact@dagmawidental.com",
     hours: "Mon-Sat: 8:00 AM - 7:30 PM",
     mapEmbedUrl: "https://maps.google.com/maps?q=CMC,Addis+Ababa&output=embed",
@@ -1053,6 +1065,7 @@ export const CLINICS = {
     name: "Boku Dental Clinic",
     tagline: "Bringing Brighter Smiles to Adama.",
     address: "Boku Area, Near Adama University Main Gate, Adama, Ethiopia",
+    city: "Adama",
     phone: "+251 92 876 5432",
     whatsapp: "251928765432",
     rating: "4.7",
@@ -1140,6 +1153,7 @@ export const CLINICS = {
     name: "Hora Dental Clinic",
     tagline: "Relaxing Dental Care by the Lakes.",
     address: "Lake Hora Road, Kebele 02, Bishoftu, Ethiopia",
+    city: "Bishoftu",
     phone: "+251 93 112 2334",
     whatsapp: "251931122334",
     rating: "4.9",
@@ -1227,6 +1241,7 @@ export const CLINICS = {
     name: "Saron Speciality Dental Clinic",
     tagline: "Advanced Dentistry for the Whole Family.",
     address: "Saris Abo, Near Kadisco Hospital, Addis Ababa, Ethiopia",
+    city: "Addis Ababa",
     phone: "+251 94 445 5566",
     whatsapp: "251944455566",
     rating: "4.8",
@@ -1314,6 +1329,7 @@ export const CLINICS = {
     name: "Rift Valley Dental Clinic",
     tagline: "Your Trusted Dental Experts in Adama.",
     address: "Piassa Area, Mebrat Hail Road, Adama, Ethiopia",
+    city: "Adama",
     phone: "+251 95 998 8776",
     whatsapp: "251959988776",
     rating: "4.6",
@@ -1400,6 +1416,7 @@ export const CLINICS = {
     name: "Bole Smiles Dental Clinic",
     tagline: "Premium Cosmetic and General Dentistry.",
     address: "Bole Medhanealem, Near Edna Mall, Addis Ababa, Ethiopia",
+    city: "Addis Ababa",
     phone: "+251 91 333 4455",
     whatsapp: "251913334455",
     rating: "4.9",
@@ -1487,6 +1504,7 @@ export const CLINICS = {
     name: "Abyssinia Dental Care",
     tagline: "Quality Family Dentistry in Bishoftu.",
     address: "Town Center, Near the Main Bus Station, Bishoftu, Ethiopia",
+    city: "Bishoftu",
     phone: "+251 92 444 5566",
     whatsapp: "251924445566",
     rating: "4.7",
@@ -1574,6 +1592,7 @@ export const CLINICS = {
     name: "Aba Geda Dental Clinic",
     tagline: "Your Smile, Our Heritage.",
     address: "Near Aba Geda Hall, Kebele 12, Adama, Ethiopia",
+    city: "Adama",
     phone: "+251 93 555 6677",
     whatsapp: "251935556677",
     rating: "4.8",
@@ -1661,6 +1680,7 @@ export const CLINICS = {
     name: "Megenagna Speciality Dental",
     tagline: "Advanced Dental Care You Can Trust.",
     address: "Zefmesh Grand Mall Area, Megenagna, Addis Ababa, Ethiopia",
+    city: "Addis Ababa",
     phone: "+251 94 666 7788",
     whatsapp: "251946667788",
     rating: "4.9",
@@ -1748,6 +1768,7 @@ export const CLINICS = {
     name: "Oromia Premier Dental",
     tagline: "First-Class Dental Care in Adama.",
     address: "Dembela City Center Area, Adama, Ethiopia",
+    city: "Adama",
     phone: "+251 95 777 8899",
     whatsapp: "251957778899",
     rating: "4.8",
@@ -1786,6 +1807,181 @@ export const CLINICS = {
       { q: "Are you open on weekends?", a: "Yes, we are open every day of the week, including Saturdays and Sundays." },
       { q: "Do I need an appointment?", a: "While we accept walk-ins, we highly recommend booking ahead via WhatsApp to avoid waiting." },
       { q: "Does a routine cleaning hurt?", a: "Not at all. Our hygienists use gentle techniques, and we ensure you are comfortable throughout the process." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+  "adama-smile-center": {
+    slug: "adama-smile-center",
+    name: "Adama Smile Center",
+    tagline: "Quality Care for the Whole Family.",
+    address: "Near Adama Ras Hotel, Adama, Ethiopia",
+    city: "Adama",
+    phone: "+251 91 223 3445",
+    whatsapp: "251912233445",
+    rating: "4.7",
+    email: "smile@adamasmile.com",
+    hours: "Mon-Sat: 8:00 AM - 6:30 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Adama+Ras+Hotel,Adama&output=embed",
+    accentColor: "#F472B6",
+    accentColorLight: "#FCE7F3",
+    doctor: {
+      name: "Dr. Selam",
+      credentials: "DDS — Family & Pediatric Dentistry",
+      bio: "Dr. Selam brings a gentle, patient-centered approach to dentistry, focusing on making every visit comfortable for both children and adults.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Selam"
+    },
+    services: [
+      { name: "Family Dentistry", description: "Comprehensive dental care for patients of all ages." },
+      { name: "Pediatric Care", description: "Specialized, gentle dental care for your little ones." },
+      { name: "Teeth Cleaning", description: "Professional scaling and polishing for a healthy, vibrant smile." },
+      { name: "Dental Fillings", description: "Durable, tooth-colored restorations." },
+      { name: "Tooth Extraction", description: "Safe and comfortable extractions." },
+      { name: "Oral Hygiene Education", description: "Personalized advice to keep your smile healthy at home." }
+    ],
+    whyUs: [
+      { point: "Centrally located in the heart of Adama" },
+      { point: "Warm, family-oriented atmosphere" },
+      { point: "Emphasis on preventative and pediatric care" },
+      { point: "Easy, direct communication via WhatsApp" }
+    ],
+    testimonials: [
+      { name: "Tigist M.", stars: 5, text: "Dr. Selam is wonderful with kids! My son actually enjoys going to the dentist now." },
+      { name: "Yosef B.", stars: 5, text: "Very professional and kind staff. The clinic is always clean and welcoming." },
+      { name: "Alemtsehay A.", stars: 4, text: "Great family clinic. They make scheduling very easy." }
+    ],
+    faq: [
+      { q: "Do you offer pediatric dentistry?", a: "Yes, we specialize in making dental care a positive, anxiety-free experience for children." },
+      { q: "How often should I have a checkup?", a: "We recommend a routine cleaning and exam every 6 months to maintain optimal oral health." },
+      { q: "Do you accept walk-in patients?", a: "We prefer appointments, but we will do our best to accommodate emergencies." },
+      { q: "Do I need an appointment?", a: "We highly recommend booking ahead via WhatsApp to ensure a timely visit." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "bishoftu-prime-dental": {
+    slug: "bishoftu-prime-dental",
+    name: "Bishoftu Prime Dental",
+    tagline: "Your Partner in Dental Health.",
+    address: "Main Road, Opposite the Hospital, Bishoftu, Ethiopia",
+    city: "Bishoftu",
+    phone: "+251 98 776 6554",
+    whatsapp: "251987766554",
+    rating: "4.9",
+    email: "hello@bishoftuprime.com",
+    hours: "Mon-Sat: 8:00 AM - 7:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Bishoftu+General+Hospital&output=embed",
+    accentColor: "#3B82F6",
+    accentColorLight: "#DBEAFE",
+    doctor: {
+      name: "Dr. Bekele",
+      credentials: "DDS — Restorative & Implant Dentistry",
+      bio: "Dr. Bekele is committed to restorative excellence, using precision techniques to replace missing teeth and restore full functionality to your smile.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Bekele"
+    },
+    services: [
+      { name: "Dental Implants", description: "State-of-the-art permanent solutions for missing teeth." },
+      { name: "Crowns & Bridges", description: "Custom-made, high-quality restorations to restore your smile." },
+      { name: "Root Canal Therapy", description: "Advanced endodontic care to save your natural teeth." },
+      { name: "Teeth Cleaning", description: "Thorough cleaning to keep your gums and teeth healthy." },
+      { name: "Dental Fillings", description: "Tooth-colored composite fillings for a natural look." },
+      { name: "Consultation", description: "Comprehensive oral health evaluation." }
+    ],
+    whyUs: [
+      { point: "Specialist-level care for implants and complex cases" },
+      { point: "Prime location directly across from the general hospital" },
+      { point: "Modern, high-precision equipment" },
+      { point: "Committed to long-term oral health and patient education" }
+    ],
+    testimonials: [
+      { name: "Fekadu K.", stars: 5, text: "I had an implant done by Dr. Bekele. The process was explained perfectly and I am very happy with the result." },
+      { name: "Senait D.", stars: 5, text: "Extremely professional clinic. They set the standard for dental care in Bishoftu." },
+      { name: "Meklit H.", stars: 4, text: "Very thorough and honest. I appreciate that they focus on long-term health." }
+    ],
+    faq: [
+      { q: "What is the benefit of dental implants?", a: "Implants are the closest thing to natural teeth, providing excellent strength and aesthetics for replacing missing teeth." },
+      { q: "Do you have advanced equipment?", a: "Yes, we invest in modern dental technology to ensure our patients receive the most precise treatments possible." },
+      { q: "Do I need an appointment?", a: "Yes, for specialized procedures like implants, we require a consultation appointment, which you can book via WhatsApp." },
+      { q: "Is your clinic accessible?", a: "We are conveniently located on the main road, directly opposite the hospital." }
     ],
     ui: {
       demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
