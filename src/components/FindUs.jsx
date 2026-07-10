@@ -94,7 +94,7 @@ export default function FindUs({ clinic }) {
           <iframe
             src={clinic.mapEmbedUrl}
             title={title}
-            className="h-72 w-full rounded-[1.5rem] border-0 sm:h-120"
+            className="h-72 w-full rounded-[1.5rem] border-0 sm:h-135"
             loading="lazy"
           />
         </motion.div>

@@ -604,7 +604,7 @@ function Footer() {
     <footer className="py-8" style={{ background: "#070D17", borderTop: "1px solid rgba(95,211,218,0.10)" }}>
       {isAdmin && (
         <div className="flex flex-col ml-2">
-          {newClinic.map((clinic) => {
+          {newClinic.map((clinic,index) => {
 
             if(!clinic.name){
               return null
@@ -615,7 +615,7 @@ function Footer() {
                 to={`preview/${clinic.slug}`}
                 className="text-[#5A6E82] hover:text-[#5FD3DA] transition-colors border-b border-[#5A6E82] hover:border-[#5FD3DA] py-1"
               >
-                {clinic.name} And place: {clinic.address}
+                {index + 1}, {clinic.name} And place: {clinic.address}
               </NavLink>
             )
           })}
