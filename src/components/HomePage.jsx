@@ -613,7 +613,7 @@ function Footer() {
               <NavLink
                 key={clinic.name}
                 to={`preview/${clinic.slug}`}
-                className="text-[#5A6E82] hover:text-[#5FD3DA] transition-colors"
+                className="text-[#5A6E82] hover:text-[#5FD3DA] transition-colors border-b border-[#5A6E82] hover:border-[#5FD3DA] py-1"
               >
                 {clinic.name} And place: {clinic.address}
               </NavLink>

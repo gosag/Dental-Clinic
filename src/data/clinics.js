@@ -439,6 +439,1395 @@ export const CLINICS = {
       },
       footer: { siteBy: "Site by ", previewNote: "Preview demo." }
     }
+  },
+  "lucy-dental": {
+    slug: "lucy-dental",
+    name: "Lucy Dental Clinic",
+    tagline: "Brightening Smiles in the Heart of Addis Ababa.",
+    address: "Bole, Atlas Road (Near European Union), Addis Ababa, Ethiopia",
+    phone: "+251 91 123 4567",
+    whatsapp: "251911234567",
+    rating: "4.9",
+    email: "contact@lucydental.com",
+    hours: "Mon-Sat: 8:30 AM - 7:30 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Lucy+Dental+Clinic,Addis+Ababa&output=embed",
+    accentColor: "#10B981",
+    accentColorLight: "#D1FAE5",
+    doctor: {
+      name: "Dr. Bethelhem",
+      credentials: "DMD — Cosmetic & Restorative Dentistry",
+      bio: "Committed to creating beautiful, confident smiles using the latest dental technology in a relaxing environment.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Bethelhem"
+    },
+    services: [
+      { name: "Teeth Whitening", description: "Professional bleaching treatments for a noticeably brighter, whiter smile." },
+      { name: "General Checkups", description: "Comprehensive oral exams and digital x-rays to catch issues early." },
+      { name: "Orthodontics", description: "Braces and aligners to properly position your teeth and improve bite." },
+      { name: "Dental Implants", description: "Permanent, natural-looking replacements for missing teeth." },
+      { name: "Root Canal", description: "Pain-free endodontic therapy to save severely infected teeth." },
+      { name: "Crown & Bridge", description: "Custom-made caps and bridges to restore damaged or missing teeth." }
+    ],
+    whyUs: [
+      { point: "Conveniently located in Bole, Atlas" },
+      { point: "Modern, state-of-the-art equipment" },
+      { point: "Pain-free treatments focused on patient comfort" },
+      { point: "Highly rated on social media for excellent service" }
+    ],
+    testimonials: [
+      { name: "Helen T.", stars: 5, text: "Dr. Bethelhem is amazing! The clinic is super clean and the teeth whitening results were instant." },
+      { name: "Ephrem K.", stars: 5, text: "Very professional staff. They explained my treatment plan clearly and the procedure was painless." },
+      { name: "Selamawit Y.", stars: 4, text: "Great location and easy booking through WhatsApp. I didn't have to wait long at all." }
+    ],
+    faq: [
+      { q: "Do you accept walk-in patients?", a: "Yes, but we recommend booking an appointment via WhatsApp to minimize your wait time." },
+      { q: "How long does teeth whitening take?", a: "An in-office professional whitening session usually takes about 45 to 60 minutes." },
+      { q: "Is root canal treatment painful?", a: "Not at all. We use modern local anesthesia so the procedure is completely painless." },
+      { q: "Do you offer orthodontic treatments?", a: "Yes, we provide both traditional braces and clear aligner options." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "kaku-dental": {
+    slug: "kaku-dental",
+    name: "Kaku Dental Clinic",
+    tagline: "Your Family’s Trusted Dental Care Partner.",
+    address: "Jemo 1 (Near St. Michael Church), Addis Ababa, Ethiopia",
+    phone: "+251 92 345 6789",
+    whatsapp: "251923456789",
+    rating: "4.8",
+    email: "hello@kakudental.com",
+    hours: "Mon-Sun: 8:00 AM - 8:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Kaku+Dental+Clinic,Addis+Ababa&output=embed",
+    accentColor: "#EC4899",
+    accentColorLight: "#FCE7F3",
+    doctor: {
+      name: "Dr. Kidist",
+      credentials: "DDS — General & Pediatric Dentistry",
+      bio: "Passionate about making dental visits fun for kids and stress-free for adults.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Kidist"
+    },
+    services: [
+      { name: "Pediatric Dentistry", description: "Gentle, anxiety-free dental care designed specifically for children." },
+      { name: "Dental Fillings", description: "Durable, tooth-colored composite fillings that restore your natural smile." },
+      { name: "Teeth Cleaning", description: "Professional scaling and polishing to remove plaque and prevent gum disease." },
+      { name: "Tooth Extraction", description: "Safe extractions performed under local anesthesia for minimal discomfort." },
+      { name: "Gum Therapy", description: "Treatments to reverse gingivitis and maintain healthy gums." },
+      { name: "Consultations", description: "Expert advice on oral hygiene and personalized treatment plans." }
+    ],
+    whyUs: [
+      { point: "Dedicated kids play area to reduce anxiety" },
+      { point: "Open every day of the week, including Sundays" },
+      { point: "Affordable family packages available" },
+      { point: "Seamless booking directly through WhatsApp" }
+    ],
+    testimonials: [
+      { name: "Abel M.", stars: 5, text: "Brought my 5-year-old here and Dr. Kidist was incredibly patient. Highly recommend for families!" },
+      { name: "Fikirte S.", stars: 5, text: "Clean clinic and friendly staff. The teeth cleaning was very thorough." },
+      { name: "Dawit G.", stars: 4, text: "Great neighborhood clinic in Jemo. Open on Sundays which is a lifesaver." }
+    ],
+    faq: [
+      { q: "Are you open on weekends?", a: "Yes! We are open every day, including Saturdays and Sundays, from 8:00 AM to 8:00 PM." },
+      { q: "Do you treat young children?", a: "Absolutely. We specialize in pediatric dentistry and making kids feel safe and comfortable." },
+      { q: "Do I need an appointment?", a: "While we accept walk-ins, we highly recommend booking ahead via WhatsApp to avoid waiting." },
+      { q: "Does a routine cleaning hurt?", a: "Not at all. Our hygienists use gentle techniques, and we ensure you are comfortable throughout the process." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "family-dental-adama": {
+    slug: "family-dental-adama",
+    name: "Family Dental Clinic",
+    tagline: "Exceptional Oral Care for the Adama Community.",
+    address: "Mebrat Hail Area, Kebele 04, Adama, Ethiopia",
+    phone: "+251 93 456 7890",
+    whatsapp: "251934567890",
+    rating: "4.7",
+    email: "info@familydentaladama.com",
+    hours: "Mon-Sat: 8:00 AM - 7:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Family+Dental+Clinic,Adama&output=embed",
+    accentColor: "#F59E0B",
+    accentColorLight: "#FEF3C7",
+    doctor: {
+      name: "Dr. Kaleb",
+      credentials: "DDS — Oral Surgery & Periodontics",
+      bio: "With over a decade of experience in Adama, Dr. Kaleb brings expert surgical and preventive care to your doorstep.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Kaleb"
+    },
+    services: [
+      { name: "Oral Surgery", description: "Expert wisdom tooth removal and complex extractions done safely." },
+      { name: "Periodontics", description: "Advanced gum disease treatments to restore your oral health." },
+      { name: "Night Guards", description: "Custom-fitted guards to prevent teeth grinding and jaw pain." },
+      { name: "General Checkups", description: "Comprehensive oral exams and digital x-rays to catch issues early." },
+      { name: "Teeth Cleaning", description: "Professional scaling and polishing to remove plaque." },
+      { name: "Emergency Dental", description: "Immediate care for severe toothaches, broken teeth, and injuries." }
+    ],
+    whyUs: [
+      { point: "Multilingual staff speaking Amharic, Oromiffa, and English" },
+      { point: "Flexible payment options tailored for you" },
+      { point: "Relaxing, newly renovated clinic environment" },
+      { point: "Fast response for dental emergencies" }
+    ],
+    testimonials: [
+      { name: "Tilahun W.", stars: 5, text: "I had a terrible toothache and Dr. Kaleb treated me immediately. Excellent emergency service." },
+      { name: "Chaltu B.", stars: 5, text: "The staff is so welcoming and they speak Oromiffa which made my mother feel very comfortable." },
+      { name: "Meron T.", stars: 4, text: "Very professional clinic in Mebrat Hail. Clean and efficient." }
+    ],
+    faq: [
+      { q: "Do you handle dental emergencies?", a: "Yes, we prioritize emergency cases. Please call or WhatsApp us immediately if you are in pain." },
+      { q: "What languages do your staff speak?", a: "We fluently speak Amharic, Afaan Oromoo, and English." },
+      { q: "Do you provide custom night guards?", a: "Yes, we take impressions of your teeth to create perfectly fitted guards to protect against grinding." },
+      { q: "Do I need an appointment?", a: "While we accept walk-ins, we highly recommend booking ahead via WhatsApp to avoid waiting." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "smile-care-adama": {
+    slug: "smile-care-adama",
+    name: "Smile Care Dental Clinic",
+    tagline: "Modern Dentistry for a Confident You.",
+    address: "Posta Bet Area, Near the Main Road, Adama, Ethiopia",
+    phone: "+251 94 567 8901",
+    whatsapp: "251945678901",
+    rating: "4.9",
+    email: "appointments@smilecareadama.com",
+    hours: "Mon-Sun: 8:30 AM - 6:30 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Smile+Care+Dental+Clinic,Adama&output=embed",
+    accentColor: "#8B5CF6",
+    accentColorLight: "#EDE9FE",
+    doctor: {
+      name: "Dr. Mahlet",
+      credentials: "DDS — General & Preventive Dentistry",
+      bio: "Dedicated to providing thorough preventive care and educating the Adama community on sustainable oral hygiene.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Mahlet"
+    },
+    services: [
+      { name: "Teeth Cleaning", description: "Professional scaling and polishing to remove plaque and prevent gum disease." },
+      { name: "Cosmetic Fillings", description: "Tooth-colored resins that blend flawlessly with your natural teeth." },
+      { name: "Fluoride Treatment", description: "Strengthen your enamel and prevent cavities with targeted fluoride applications." },
+      { name: "Tooth Extraction", description: "Safe extractions performed under local anesthesia for minimal discomfort." },
+      { name: "Gum Therapy", description: "Treatments to reverse gingivitis and maintain healthy gums." },
+      { name: "Smile Consultations", description: "Comprehensive evaluations to plan your perfect smile makeover." }
+    ],
+    whyUs: [
+      { point: "Centrally located in Adama’s Posta Bet area" },
+      { point: "Focus on preventative care to save you money long-term" },
+      { point: "Strict and state-of-the-art sterilization protocols" },
+      { point: "Comfortable, anxiety-free clinic atmosphere" }
+    ],
+    testimonials: [
+      { name: "Bereket A.", stars: 5, text: "Dr. Mahlet is fantastic. She explained everything she was doing and made me feel completely at ease." },
+      { name: "Lensa D.", stars: 5, text: "The cleanest clinic I have visited in Adama. Great service and easy booking." },
+      { name: "Yared K.", stars: 4, text: "Quick and painless filling. I was in and out in less than an hour." }
+    ],
+    faq: [
+      { q: "Is your clinic easy to find?", a: "Yes, we are located right near the Old Post Office (Posta Bet) on the main road." },
+      { q: "Do you offer aesthetic fillings?", a: "Yes, we use high-quality composite materials that match your natural tooth color perfectly." },
+      { q: "Do I need an appointment?", a: "While we accept walk-ins, we highly recommend booking ahead via WhatsApp to avoid waiting." },
+      { q: "Does a routine cleaning hurt?", a: "Not at all. Our hygienists use gentle techniques, and we ensure you are comfortable throughout the process." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "bishoftu-special-dental": {
+    slug: "bishoftu-special-dental",
+    name: "Bishoftu Special Dental Clinic",
+    tagline: "Premium Dental Care in the City of Lakes.",
+    address: "Central Square, Near Kuriftu Resort, Bishoftu, Ethiopia",
+    phone: "+251 95 678 9012",
+    whatsapp: "251956789012",
+    rating: "4.8",
+    email: "care@bishoftudental.com",
+    hours: "Mon-Sat: 8:00 AM - 6:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Bishoftu+Special+Dental+Clinic,Bishoftu&output=embed",
+    accentColor: "#06B6D4",
+    accentColorLight: "#CFFAFE",
+    doctor: {
+      name: "Dr. Dawit",
+      credentials: "DDS — Prosthodontics & General Dentistry",
+      bio: "Bringing top-tier restorative dentistry to Bishoftu, helping patients regain the function and beauty of their smiles.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Dawit"
+    },
+    services: [
+      { name: "Dentures", description: "Comfortable, custom-fitted full and partial dentures." },
+      { name: "Crown & Bridge", description: "Custom-made caps and bridges to restore damaged or missing teeth." },
+      { name: "General Checkups", description: "Comprehensive oral exams and digital x-rays to catch issues early." },
+      { name: "Teeth Cleaning", description: "Professional scaling and polishing to remove plaque and prevent gum disease." },
+      { name: "Tooth Extraction", description: "Safe extractions performed under local anesthesia for minimal discomfort." },
+      { name: "Dental Fillings", description: "Durable, tooth-colored composite fillings that restore your natural smile." }
+    ],
+    whyUs: [
+      { point: "Beautiful, accessible location near the lakes" },
+      { point: "Specialized in restorative and prosthetic dentistry" },
+      { point: "Fast turnaround times for crowns and dentures" },
+      { point: "WhatsApp booking — confirm your slot in minutes" }
+    ],
+    testimonials: [
+      { name: "Girum F.", stars: 5, text: "Got a new set of dentures from Dr. Dawit. The fit is perfect and the process was so smooth." },
+      { name: "Sara W.", stars: 5, text: "Beautiful clinic in a great location. The staff is very friendly and efficient." },
+      { name: "Kidus T.", stars: 4, text: "Highly recommend their teeth cleaning service. Very thorough." }
+    ],
+    faq: [
+      { q: "How long does it take to get a dental bridge?", a: "Usually, it requires two visits spanning over a week. We take impressions on the first visit and fit the bridge on the second." },
+      { q: "Do you accept walk-ins?", a: "We do accept walk-ins, but scheduling via WhatsApp guarantees you won't have to wait." },
+      { q: "Are your procedures painful?", a: "We use the latest local anesthetics to ensure you feel minimal to no discomfort during your treatments." },
+      { q: "Is there parking available?", a: "Yes, there is ample parking space available near the clinic." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "zema-dental": {
+    slug: "zema-dental",
+    name: "Zema Dental Clinic",
+    tagline: "Harmonizing Health and Aesthetics in Bishoftu.",
+    address: "Kebele 01, Main Road, Bishoftu, Ethiopia",
+    phone: "+251 96 789 0123",
+    whatsapp: "251967890123",
+    rating: "4.9",
+    email: "contact@zemadental.com",
+    hours: "Mon-Sun: 8:00 AM - 7:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Zema+Dental+Clinic,Bishoftu&output=embed",
+    accentColor: "#3B82F6",
+    accentColorLight: "#DBEAFE",
+    doctor: {
+      name: "Dr. Yonatan",
+      credentials: "DMD — Cosmetic Dentistry & Endodontics",
+      bio: "Fusing clinical excellence with an artist's eye, Dr. Yonatan transforms smiles and relieves pain with precision.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Yonatan"
+    },
+    services: [
+      { name: "Smile Makeover", description: "Comprehensive cosmetic treatments to give you the smile of your dreams." },
+      { name: "Root Canal", description: "Pain-free endodontic therapy to save severely infected teeth." },
+      { name: "Bad Breath Treatment", description: "Targeted deep cleaning and advice to eliminate halitosis permanently." },
+      { name: "General Checkups", description: "Comprehensive oral exams and digital x-rays to catch issues early." },
+      { name: "Tooth Extraction", description: "Safe extractions performed under local anesthesia for minimal discomfort." },
+      { name: "Dental Fillings", description: "Durable, tooth-colored composite fillings that restore your natural smile." }
+    ],
+    whyUs: [
+      { point: "State-of-the-art facility on Bishoftu's main road" },
+      { point: "Specialized in advanced root canal therapies" },
+      { point: "Open 7 days a week for your convenience" },
+      { point: "Exceptional standard of hygiene and care" }
+    ],
+    testimonials: [
+      { name: "Mekdes A.", stars: 5, text: "I was terrified of getting a root canal, but Dr. Yonatan made it completely painless. Highly recommend!" },
+      { name: "Biniyam S.", stars: 5, text: "The cosmetic work they did on my front teeth is incredible. I finally feel confident smiling." },
+      { name: "Roza M.", stars: 4, text: "Very modern clinic. Booking via WhatsApp is super easy and the staff replies quickly." }
+    ],
+    faq: [
+      { q: "Are you open on weekends?", a: "Yes! We are open every day, including Saturdays and Sundays, from 8:00 AM to 7:00 PM." },
+      { q: "Is a root canal painful?", a: "No, modern root canals are no more uncomfortable than getting a standard filling." },
+      { q: "Do I need an appointment?", a: "While we accept walk-ins, we highly recommend booking ahead via WhatsApp to avoid waiting." },
+      { q: "Can you fix chipped front teeth?", a: "Absolutely. We offer cosmetic bonding and veneers that seamlessly repair chipped teeth." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+  "dagmawi-dental": {
+    slug: "dagmawi-dental",
+    name: "Dagmawi Dental Clinic",
+    tagline: "Precision Dental Care in CMC, Addis Ababa.",
+    address: "CMC Michael, Next to Tsehay Real Estate, Addis Ababa, Ethiopia",
+    phone: "+251 91 234 5678",
+    whatsapp: "251912345678",
+    rating: "4.8",
+    email: "contact@dagmawidental.com",
+    hours: "Mon-Sat: 8:00 AM - 7:30 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=CMC,Addis+Ababa&output=embed",
+    accentColor: "#0F766E",
+    accentColorLight: "#CCFBF1",
+    doctor: {
+      name: "Dr. Dagmawi",
+      credentials: "DDS — Restorative & General Dentistry",
+      bio: "Committed to delivering high-quality, painless dental treatments utilizing modern techniques to ensure long-lasting oral health.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Dagmawi"
+    },
+    services: [
+      { name: "General Checkups", description: "Comprehensive oral exams and digital x-rays to catch issues early." },
+      { name: "Teeth Cleaning", description: "Professional scaling and polishing to remove plaque and prevent gum disease." },
+      { name: "Dental Crowns", description: "High-quality, natural-looking crowns to restore damaged teeth." },
+      { name: "Root Canal Therapy", description: "Expert endodontic treatment to save infected teeth and relieve pain." },
+      { name: "Dental Fillings", description: "Durable, tooth-colored composite fillings that restore your natural smile." },
+      { name: "Teeth Whitening", description: "Professional bleaching treatments for a brighter, more confident smile." }
+    ],
+    whyUs: [
+      { point: "Easily accessible location in the CMC area" },
+      { point: "State-of-the-art sterilization and hygiene standards" },
+      { point: "Friendly, highly trained staff focused on patient comfort" },
+      { point: "Seamless booking directly through WhatsApp" }
+    ],
+    testimonials: [
+      { name: "Yonatan T.", stars: 5, text: "Dr. Dagmawi was incredibly professional. The clinic is spotless and the equipment is very modern." },
+      { name: "Fikir M.", stars: 5, text: "Best teeth cleaning experience I've had. Quick, painless, and very thorough." },
+      { name: "Abel K.", stars: 4, text: "Great location and easy booking via WhatsApp. Very satisfied with my fillings." }
+    ],
+    faq: [
+      { q: "Do I need to book in advance?", a: "While we accept walk-ins, we highly recommend booking ahead via WhatsApp to guarantee your slot." },
+      { q: "Is the clinic open on weekends?", a: "We are open on Saturdays from 8:00 AM to 7:30 PM. We are closed on Sundays." },
+      { q: "Do you offer teeth whitening?", a: "Yes, we offer professional in-office whitening that provides immediate results." },
+      { q: "Are your treatments painful?", a: "We prioritize patient comfort and use effective local anesthetics to ensure painless procedures." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "boku-dental": {
+    slug: "boku-dental",
+    name: "Boku Dental Clinic",
+    tagline: "Bringing Brighter Smiles to Adama.",
+    address: "Boku Area, Near Adama University Main Gate, Adama, Ethiopia",
+    phone: "+251 92 876 5432",
+    whatsapp: "251928765432",
+    rating: "4.7",
+    email: "info@bokudental.com",
+    hours: "Mon-Sun: 8:30 AM - 6:30 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Adama+University,Adama&output=embed",
+    accentColor: "#C2410C",
+    accentColorLight: "#FFEDD5",
+    doctor: {
+      name: "Dr. Tadesse",
+      credentials: "DDS — Preventive & Family Dentistry",
+      bio: "Dedicated to the Adama community, providing gentle and accessible dental care for university students and families alike.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Tadesse"
+    },
+    services: [
+      { name: "Emergency Dental", description: "Immediate care for severe toothaches, broken teeth, and injuries." },
+      { name: "Tooth Extraction", description: "Safe extractions performed under local anesthesia for minimal discomfort." },
+      { name: "Teeth Cleaning", description: "Professional scaling and polishing to remove plaque and prevent gum disease." },
+      { name: "Dental Fillings", description: "Durable, tooth-colored composite fillings that restore your natural smile." },
+      { name: "Orthodontic Consultations", description: "Initial evaluations for braces and smile alignment." },
+      { name: "Gum Therapy", description: "Treatments to reverse gingivitis and maintain healthy gums." }
+    ],
+    whyUs: [
+      { point: "Conveniently located near Adama University" },
+      { point: "Special discounts available for students with valid ID" },
+      { point: "Open 7 days a week for flexible scheduling" },
+      { point: "WhatsApp booking — confirm your slot in minutes" }
+    ],
+    testimonials: [
+      { name: "Eyerusalem D.", stars: 5, text: "Perfect location for students! The staff is friendly and the prices are very fair." },
+      { name: "Chala W.", stars: 5, text: "I came in with a terrible toothache and they treated me immediately. Highly recommend Dr. Tadesse." },
+      { name: "Helen B.", stars: 4, text: "Clean facility and fast service. Booking through WhatsApp made everything so easy." }
+    ],
+    faq: [
+      { q: "Do you offer student discounts?", a: "Yes, we offer special pricing for Adama University students upon presenting a valid student ID." },
+      { q: "Are you open on Sundays?", a: "Yes, we are open every day of the week from 8:30 AM to 6:30 PM." },
+      { q: "Do you handle dental emergencies?", a: "Absolutely. If you are in severe pain, please walk in or contact us immediately on WhatsApp." },
+      { q: "Does a routine cleaning hurt?", a: "Not at all. Our team uses gentle techniques to ensure your comfort." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "hora-dental": {
+    slug: "hora-dental",
+    name: "Hora Dental Clinic",
+    tagline: "Relaxing Dental Care by the Lakes.",
+    address: "Lake Hora Road, Kebele 02, Bishoftu, Ethiopia",
+    phone: "+251 93 112 2334",
+    whatsapp: "251931122334",
+    rating: "4.9",
+    email: "smile@horadental.com",
+    hours: "Mon-Sat: 8:00 AM - 6:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Lake+Hora,Bishoftu&output=embed",
+    accentColor: "#1D4ED8",
+    accentColorLight: "#DBEAFE",
+    doctor: {
+      name: "Dr. Kalkidan",
+      credentials: "DMD — Cosmetic & General Dentistry",
+      bio: "Passionate about creating beautiful smiles in a calm, stress-free environment tailored for the residents and visitors of Bishoftu.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Kalkidan"
+    },
+    services: [
+      { name: "Cosmetic Dentistry", description: "Veneers and bonding to give you a flawless, confident smile." },
+      { name: "Teeth Cleaning", description: "Professional scaling and polishing to remove plaque and prevent gum disease." },
+      { name: "Pediatric Dentistry", description: "Gentle, anxiety-free dental care designed specifically for children." },
+      { name: "Tooth Extraction", description: "Safe extractions performed under local anesthesia for minimal discomfort." },
+      { name: "Dental Fillings", description: "Durable, tooth-colored composite fillings that restore your natural smile." },
+      { name: "Dentures & Bridges", description: "Custom-fitted solutions to replace missing teeth and restore function." }
+    ],
+    whyUs: [
+      { point: "Serene clinic environment located near Lake Hora" },
+      { point: "Patient-centered care focusing on eliminating dental anxiety" },
+      { point: "Advanced cosmetic treatments available locally" },
+      { point: "Fast and responsive WhatsApp appointment booking" }
+    ],
+    testimonials: [
+      { name: "Bethelhem S.", stars: 5, text: "The clinic is beautiful and very calming. Dr. Kalkidan completely cured my fear of the dentist." },
+      { name: "Dawit F.", stars: 5, text: "Excellent cosmetic work. My new veneers look completely natural. Thank you!" },
+      { name: "Lidet K.", stars: 4, text: "Very clean and professional. The staff is polite and they respect your time." }
+    ],
+    faq: [
+      { q: "Do you offer cosmetic dental procedures?", a: "Yes, we specialize in smile makeovers including veneers, bonding, and professional whitening." },
+      { q: "Is there parking available?", a: "Yes, we have secure parking space available right outside the clinic on Lake Hora road." },
+      { q: "Do I need an appointment?", a: "While we accept walk-ins, we highly recommend booking ahead via WhatsApp to avoid waiting." },
+      { q: "Do you treat children?", a: "Absolutely! We create a fun and relaxed environment to make dental visits easy for kids." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "saron-dental": {
+    slug: "saron-dental",
+    name: "Saron Speciality Dental Clinic",
+    tagline: "Advanced Dentistry for the Whole Family.",
+    address: "Saris Abo, Near Kadisco Hospital, Addis Ababa, Ethiopia",
+    phone: "+251 94 445 5566",
+    whatsapp: "251944455566",
+    rating: "4.8",
+    email: "appointments@sarondental.com",
+    hours: "Mon-Sat: 8:00 AM - 7:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Saris,Addis+Ababa&output=embed",
+    accentColor: "#BE185D",
+    accentColorLight: "#FCE7F3",
+    doctor: {
+      name: "Dr. Saron",
+      credentials: "DDS — Oral Surgery & General Dentistry",
+      bio: "With extensive experience in both complex surgical procedures and family dentistry, Dr. Saron ensures top-tier care for all ages.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Saron"
+    },
+    services: [
+      { name: "Oral Surgery", description: "Expert wisdom tooth removal and complex extractions done safely." },
+      { name: "General Checkups", description: "Comprehensive oral exams and digital x-rays to catch issues early." },
+      { name: "Teeth Cleaning", description: "Professional scaling and polishing to remove plaque and prevent gum disease." },
+      { name: "Dental Implants", description: "Permanent, natural-looking replacements for missing teeth." },
+      { name: "Dental Fillings", description: "Durable, tooth-colored composite fillings that restore your natural smile." },
+      { name: "Root Canal", description: "Pain-free endodontic therapy to save severely infected teeth." }
+    ],
+    whyUs: [
+      { point: "Comprehensive care ranging from checkups to implants" },
+      { point: "Highly skilled team with a focus on hygiene and safety" },
+      { point: "Convenient location near Saris Abo and Kadisco Hospital" },
+      { point: "Modern dental equipment and digital x-rays" }
+    ],
+    testimonials: [
+      { name: "Tewodros G.", stars: 5, text: "I had my wisdom teeth extracted here. Dr. Saron is an absolute professional. Smooth recovery and no pain!" },
+      { name: "Mahlet Y.", stars: 5, text: "Very friendly and efficient clinic. The staff makes you feel right at home." },
+      { name: "Eyob T.", stars: 4, text: "Great neighborhood clinic. Responded very fast when I booked through WhatsApp." }
+    ],
+    faq: [
+      { q: "Do you perform wisdom tooth extractions?", a: "Yes, Dr. Saron specializes in oral surgery, including complex wisdom tooth removals." },
+      { q: "Is it easy to find your clinic?", a: "Yes, we are located in Saris Abo, just a short walk from Kadisco Hospital." },
+      { q: "Do I need an appointment?", a: "While we accept walk-ins, we highly recommend booking ahead via WhatsApp to avoid waiting." },
+      { q: "Do you use modern anesthesia?", a: "Yes, we utilize the latest local anesthetics to make sure your treatment is completely painless." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "rift-valley-dental": {
+    slug: "rift-valley-dental",
+    name: "Rift Valley Dental Clinic",
+    tagline: "Your Trusted Dental Experts in Adama.",
+    address: "Piassa Area, Mebrat Hail Road, Adama, Ethiopia",
+    phone: "+251 95 998 8776",
+    whatsapp: "251959988776",
+    rating: "4.6",
+    email: "hello@riftvalleydental.com",
+    hours: "Mon-Sun: 8:00 AM - 8:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Piassa,Adama&output=embed",
+    accentColor: "#4D7C0F",
+    accentColorLight: "#ECFCCB",
+    doctor: {
+      name: "Dr. Gemechu",
+      credentials: "DDS — General Dentistry & Endodontics",
+      bio: "Rooted in the Adama community, Dr. Gemechu combines extensive experience with a compassionate approach to dental care.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Gemechu"
+    },
+    services: [
+      { name: "General Checkups", description: "Comprehensive oral exams and digital x-rays to catch issues early." },
+      { name: "Teeth Cleaning", description: "Professional scaling and polishing to remove plaque and prevent gum disease." },
+      { name: "Root Canal", description: "Pain-free endodontic therapy to save severely infected teeth." },
+      { name: "Tooth Extraction", description: "Safe extractions performed under local anesthesia for minimal discomfort." },
+      { name: "Dental Fillings", description: "Durable, tooth-colored composite fillings that restore your natural smile." },
+      { name: "Gum Therapy", description: "Treatments to reverse gingivitis and maintain healthy gums." }
+    ],
+    whyUs: [
+      { point: "Central Adama location in the Piassa area" },
+      { point: "Multilingual staff speaking Afaan Oromoo and Amharic fluently" },
+      { point: "Extended hours — open until 8 PM every day" },
+      { point: "Affordable family packages and transparent pricing" }
+    ],
+    testimonials: [
+      { name: "Biftu A.", stars: 5, text: "Dr. Gemechu is excellent. He explains everything in Afaan Oromoo which made my grandmother very comfortable." },
+      { name: "Kaleb W.", stars: 5, text: "I had a root canal done here and felt absolutely nothing. Highly recommended!" },
+      { name: "Samrawit Z.", stars: 4, text: "Great that they are open late. I was able to get my teeth cleaned after finishing work." }
+    ],
+    faq: [
+      { q: "What languages do you speak?", a: "Our clinic proudly serves patients in Afaan Oromoo, Amharic, and English." },
+      { q: "Are you open in the evenings?", a: "Yes, we are open until 8:00 PM every day to accommodate patients after work." },
+      { q: "Do I need an appointment?", a: "While we accept walk-ins, we highly recommend booking ahead via WhatsApp to avoid waiting." },
+      { q: "Is root canal treatment painful?", a: "Not at all. We use modern local anesthesia so the procedure is completely painless." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+  "bole-smiles": {
+    slug: "bole-smiles",
+    name: "Bole Smiles Dental Clinic",
+    tagline: "Premium Cosmetic and General Dentistry.",
+    address: "Bole Medhanealem, Near Edna Mall, Addis Ababa, Ethiopia",
+    phone: "+251 91 333 4455",
+    whatsapp: "251913334455",
+    rating: "4.9",
+    email: "appointments@bolesmiles.com",
+    hours: "Mon-Sat: 8:30 AM - 8:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Bole+Medhanealem,Addis+Ababa&output=embed",
+    accentColor: "#8B5CF6",
+    accentColorLight: "#EDE9FE",
+    doctor: {
+      name: "Dr. Yonatan",
+      credentials: "DMD — Cosmetic Dentistry Specialization",
+      bio: "Focusing on aesthetic perfection and comprehensive oral health, Dr. Yonatan transforms smiles in the vibrant heart of Bole.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Yonatan"
+    },
+    services: [
+      { name: "Smile Makeover", description: "Comprehensive cosmetic treatments including veneers and bonding." },
+      { name: "Teeth Whitening", description: "Advanced laser whitening for immediate, dazzling results." },
+      { name: "General Checkups", description: "Thorough oral exams and digital x-rays to catch issues early." },
+      { name: "Orthodontics", description: "Clear aligners and traditional braces for a perfectly straight smile." },
+      { name: "Dental Implants", description: "Permanent, natural-looking replacements for missing teeth." },
+      { name: "Teeth Cleaning", description: "Professional scaling and polishing to remove plaque." }
+    ],
+    whyUs: [
+      { point: "Located centrally in Bole near Edna Mall" },
+      { point: "Specialized in high-end cosmetic dentistry" },
+      { point: "Extended evening hours to fit your busy schedule" },
+      { point: "State-of-the-art digital scanning and imaging" }
+    ],
+    testimonials: [
+      { name: "Meron A.", stars: 5, text: "I came in for teeth whitening and the results are incredible. Dr. Yonatan and his team are the best in Bole!" },
+      { name: "Ephrem T.", stars: 5, text: "Very premium feel to the clinic. Clean, modern, and they really value your time." },
+      { name: "Hanna K.", stars: 4, text: "Easy booking via WhatsApp and great customer service from the moment you walk in." }
+    ],
+    faq: [
+      { q: "Do you offer clear aligners?", a: "Yes, we offer clear aligner therapies as a discreet alternative to traditional braces." },
+      { q: "Is there parking available?", a: "Yes, there is secure parking available for our patients in the building." },
+      { q: "Do I need an appointment?", a: "While we accept walk-ins, we highly recommend booking ahead via WhatsApp to avoid waiting." },
+      { q: "How long does laser whitening take?", a: "The procedure takes about an hour and you will see immediate results." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "abyssinia-dental-bishoftu": {
+    slug: "abyssinia-dental-bishoftu",
+    name: "Abyssinia Dental Care",
+    tagline: "Quality Family Dentistry in Bishoftu.",
+    address: "Town Center, Near the Main Bus Station, Bishoftu, Ethiopia",
+    phone: "+251 92 444 5566",
+    whatsapp: "251924445566",
+    rating: "4.7",
+    email: "hello@abyssiniadentalbishoftu.com",
+    hours: "Mon-Sun: 8:00 AM - 7:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Bishoftu+Bus+Station,Bishoftu&output=embed",
+    accentColor: "#059669",
+    accentColorLight: "#D1FAE5",
+    doctor: {
+      name: "Dr. Fasika",
+      credentials: "DDS — General & Restorative Dentistry",
+      bio: "Committed to providing accessible, high-quality dental care to families across Bishoftu in a warm and welcoming environment.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Fasika"
+    },
+    services: [
+      { name: "General Checkups", description: "Comprehensive oral exams and digital x-rays to catch issues early." },
+      { name: "Teeth Cleaning", description: "Professional scaling and polishing to remove plaque and prevent gum disease." },
+      { name: "Tooth Extraction", description: "Safe extractions performed under local anesthesia for minimal discomfort." },
+      { name: "Dental Fillings", description: "Durable, tooth-colored composite fillings that restore your natural smile." },
+      { name: "Dentures", description: "Comfortable, custom-fitted full and partial dentures." },
+      { name: "Pediatric Care", description: "Gentle dental checkups and treatments specifically tailored for children." }
+    ],
+    whyUs: [
+      { point: "Centrally located near the Bishoftu Bus Station" },
+      { point: "Affordable family pricing with high-quality materials" },
+      { point: "Open every day of the week including Sundays" },
+      { point: "Experienced with anxious patients and children" }
+    ],
+    testimonials: [
+      { name: "Samuel B.", stars: 5, text: "Dr. Fasika is very gentle. I usually hate the dentist, but I felt no pain during my extraction." },
+      { name: "Tigist W.", stars: 5, text: "Great clinic for kids. My son was very comfortable and the staff was so patient with him." },
+      { name: "Kaleb D.", stars: 4, text: "Very accessible location and they respond quickly on WhatsApp." }
+    ],
+    faq: [
+      { q: "Do you treat children?", a: "Yes, we provide gentle, stress-free pediatric dentistry for kids of all ages." },
+      { q: "Are you open on the weekends?", a: "We are open 7 days a week, including Saturdays and Sundays, from 8:00 AM to 7:00 PM." },
+      { q: "Do I need an appointment?", a: "While we accept walk-ins, we highly recommend booking ahead via WhatsApp to avoid waiting." },
+      { q: "Is the clinic easy to find?", a: "Very easy! We are located right in the town center near the main bus station." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "aba-geda-dental": {
+    slug: "aba-geda-dental",
+    name: "Aba Geda Dental Clinic",
+    tagline: "Your Smile, Our Heritage.",
+    address: "Near Aba Geda Hall, Kebele 12, Adama, Ethiopia",
+    phone: "+251 93 555 6677",
+    whatsapp: "251935556677",
+    rating: "4.8",
+    email: "info@abagedadental.com",
+    hours: "Mon-Sat: 8:00 AM - 7:30 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Aba+Geda+Hall,Adama&output=embed",
+    accentColor: "#DC2626",
+    accentColorLight: "#FEE2E2",
+    doctor: {
+      name: "Dr. Biniyam",
+      credentials: "DDS — Orthodontics & General Care",
+      bio: "A trusted name in Adama, Dr. Biniyam specializes in straightening smiles and providing comprehensive preventive care.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Biniyam"
+    },
+    services: [
+      { name: "Braces & Orthodontics", description: "Traditional braces and aligners to properly position your teeth." },
+      { name: "General Checkups", description: "Comprehensive oral exams and digital x-rays to catch issues early." },
+      { name: "Teeth Cleaning", description: "Professional scaling and polishing to remove plaque and prevent gum disease." },
+      { name: "Gum Therapy", description: "Treatments to reverse gingivitis and maintain healthy gums." },
+      { name: "Dental Fillings", description: "Durable, tooth-colored composite fillings that restore your natural smile." },
+      { name: "Tooth Extraction", description: "Safe extractions performed under local anesthesia for minimal discomfort." }
+    ],
+    whyUs: [
+      { point: "Expert orthodontic consultations and treatments" },
+      { point: "Well-known and accessible location near Aba Geda Hall" },
+      { point: "Strict sterilization and hygiene protocols" },
+      { point: "Multilingual staff providing clear communication" }
+    ],
+    testimonials: [
+      { name: "Lensa G.", stars: 5, text: "I got my braces done by Dr. Biniyam. The progress has been amazing and the price is very reasonable." },
+      { name: "Tadesse M.", stars: 5, text: "Very clean clinic and professional staff. I highly recommend them for general checkups." },
+      { name: "Chaltu A.", stars: 4, text: "Booking an appointment on WhatsApp was seamless. I barely had to wait." }
+    ],
+    faq: [
+      { q: "Do you offer payment plans for braces?", a: "Yes, we offer flexible installment plans for our orthodontic patients." },
+      { q: "What languages are spoken at the clinic?", a: "We speak Afaan Oromoo, Amharic, and English fluently." },
+      { q: "Do I need an appointment?", a: "While we accept walk-ins, we highly recommend booking ahead via WhatsApp to avoid waiting." },
+      { q: "Are orthodontic consultations free?", a: "We offer discounted initial consultations to discuss your braces and alignment options." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "megenagna-speciality": {
+    slug: "megenagna-speciality",
+    name: "Megenagna Speciality Dental",
+    tagline: "Advanced Dental Care You Can Trust.",
+    address: "Zefmesh Grand Mall Area, Megenagna, Addis Ababa, Ethiopia",
+    phone: "+251 94 666 7788",
+    whatsapp: "251946667788",
+    rating: "4.9",
+    email: "care@megenagnadental.com",
+    hours: "Mon-Sat: 8:00 AM - 7:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Megenagna,Addis+Ababa&output=embed",
+    accentColor: "#2563EB",
+    accentColorLight: "#DBEAFE",
+    doctor: {
+      name: "Dr. Selam",
+      credentials: "DMD — Endodontics & Oral Surgery",
+      bio: "Specializing in complex dental cases, Dr. Selam brings advanced surgical techniques and pain management to her patients.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Selam"
+    },
+    services: [
+      { name: "Root Canal Therapy", description: "Expert endodontic treatment to save infected teeth and relieve pain." },
+      { name: "Oral Surgery", description: "Expert wisdom tooth removal and complex extractions done safely." },
+      { name: "Dental Crowns", description: "High-quality, natural-looking crowns to restore damaged teeth." },
+      { name: "General Checkups", description: "Comprehensive oral exams and digital x-rays to catch issues early." },
+      { name: "Teeth Cleaning", description: "Professional scaling and polishing to remove plaque." },
+      { name: "Emergency Dental", description: "Immediate care for severe toothaches, broken teeth, and injuries." }
+    ],
+    whyUs: [
+      { point: "Specialized in complex root canals and surgeries" },
+      { point: "Convenient location near Zefmesh Grand Mall" },
+      { point: "Committed to 100% pain-free treatments" },
+      { point: "Fast emergency response via WhatsApp" }
+    ],
+    testimonials: [
+      { name: "Abel Y.", stars: 5, text: "I was in intense pain from an infected tooth. Dr. Selam performed a root canal and I felt immediate relief. Truly a lifesaver." },
+      { name: "Mekdes F.", stars: 5, text: "Very modern clinic. The digital x-rays are super fast and Dr. Selam explains everything on the screen." },
+      { name: "Yared T.", stars: 4, text: "Great location in Megenagna and excellent, professional service." }
+    ],
+    faq: [
+      { q: "Do you accept emergency cases?", a: "Yes, we prioritize dental emergencies. Please reach out on WhatsApp for an immediate response." },
+      { q: "Is a root canal painful?", a: "No, we use advanced local anesthetics so the procedure is completely comfortable and painless." },
+      { q: "Do I need an appointment?", a: "While we accept walk-ins, we highly recommend booking ahead via WhatsApp to avoid waiting." },
+      { q: "Do you extract wisdom teeth?", a: "Yes, Dr. Selam specializes in oral surgery including impacted wisdom tooth removals." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "oromia-premier-dental": {
+    slug: "oromia-premier-dental",
+    name: "Oromia Premier Dental",
+    tagline: "First-Class Dental Care in Adama.",
+    address: "Dembela City Center Area, Adama, Ethiopia",
+    phone: "+251 95 777 8899",
+    whatsapp: "251957778899",
+    rating: "4.8",
+    email: "contact@oromiapremierdental.com",
+    hours: "Mon-Sun: 8:30 AM - 6:30 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Adama,Ethiopia&output=embed",
+    accentColor: "#D97706",
+    accentColorLight: "#FEF3C7",
+    doctor: {
+      name: "Dr. Lensa",
+      credentials: "DDS — Preventive & Pediatric Dentistry",
+      bio: "Dr. Lensa is passionate about educating the community on oral hygiene and providing stellar preventive care for all ages.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Lensa"
+    },
+    services: [
+      { name: "Pediatric Dentistry", description: "Gentle, anxiety-free dental care designed specifically for children." },
+      { name: "Fluoride Treatment", description: "Strengthen your enamel and prevent cavities with targeted fluoride applications." },
+      { name: "Teeth Cleaning", description: "Professional scaling and polishing to remove plaque and prevent gum disease." },
+      { name: "Dental Fillings", description: "Durable, tooth-colored composite fillings that restore your natural smile." },
+      { name: "General Checkups", description: "Comprehensive oral exams and digital x-rays to catch issues early." },
+      { name: "Tooth Extraction", description: "Safe extractions performed under local anesthesia for minimal discomfort." }
+    ],
+    whyUs: [
+      { point: "Family-friendly environment tailored for young children" },
+      { point: "Focus on preventative care to keep your natural teeth healthy" },
+      { point: "Open 7 days a week for your convenience" },
+      { point: "Smooth booking process through WhatsApp" }
+    ],
+    testimonials: [
+      { name: "Fikirte D.", stars: 5, text: "My daughter used to cry at the dentist, but Dr. Lensa is a magician! Highly recommend for anyone with kids." },
+      { name: "Biftu T.", stars: 5, text: "Excellent cleaning service. They really take their time and explain how to care for your teeth properly." },
+      { name: "Girum Z.", stars: 4, text: "Very friendly staff and clean clinic. Easy to find in Adama." }
+    ],
+    faq: [
+      { q: "Do you specialize in children's dentistry?", a: "Yes, Dr. Lensa is highly experienced in pediatric dentistry and making children feel safe." },
+      { q: "Are you open on weekends?", a: "Yes, we are open every day of the week, including Saturdays and Sundays." },
+      { q: "Do I need an appointment?", a: "While we accept walk-ins, we highly recommend booking ahead via WhatsApp to avoid waiting." },
+      { q: "Does a routine cleaning hurt?", a: "Not at all. Our hygienists use gentle techniques, and we ensure you are comfortable throughout the process." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
   }
 
 }
