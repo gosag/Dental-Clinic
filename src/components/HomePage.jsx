@@ -602,7 +602,7 @@ function Footer() {
   }, [isAdmin])
   return (
     <footer className="py-8" style={{ background: "#070D17", borderTop: "1px solid rgba(95,211,218,0.10)" }}>
-      {isAdmin && (
+     
         <div className="flex flex-col ml-2">
           {newClinic.map((clinic,index) => {
 
@@ -620,7 +620,7 @@ function Footer() {
             )
           })}
         </div>
-      )}
+    
       <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-3 gg-mono text-xs text-[#5A6E82]">
         <div>
           GOSA GIRMA © {year} ·{" "}
