@@ -83,12 +83,12 @@ export default function Hero({ clinic }) {
               >
                 <a
                 
-                  href={`https://wa.me/${clinic.whatsapp}`}
+                  href={`https://t.me/+${clinic.whatsapp}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <MessageCircle className="mr-2 size-5 text-accent" />
-                  {clinic.ui.hero.whatsappUs}
+                       Telegram Us  
                 </a>
               </Button>
             </motion.div>
