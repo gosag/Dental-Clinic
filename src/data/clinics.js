@@ -2024,6 +2024,445 @@ export const CLINICS = {
       },
       footer: { siteBy: "Site by ", previewNote: "Preview demo." }
     }
+  },
+  "assela-care-dental": {
+    slug: "assela-care-dental",
+    name: "Assela Care Dental",
+    tagline: "Your Health, Our Priority in Assela.",
+    address: "Near Arsi University Main Gate, Assela, Ethiopia",
+    city: "Assela",
+    phone: "+251 91 123 4567",
+    whatsapp: "251911234567",
+    rating: "4.8",
+    email: "contact@asselacare.com",
+    hours: "Mon-Sat: 8:00 AM - 6:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Arsi+University,Assela&output=embed",
+    accentColor: "#059669",
+    accentColorLight: "#D1FAE5",
+    doctor: {
+      name: "Dr. Dawit",
+      credentials: "DDS — General & Preventive Dentistry",
+      bio: "Dr. Dawit has been serving the Assela community for over 8 years, focusing on pain-free preventive care for university students and local families alike.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Dawit"
+    },
+    services: [
+      { name: "General Checkups", description: "Thorough exams and X-rays to ensure your teeth and gums are healthy." },
+      { name: "Teeth Cleaning", description: "Professional scaling to remove plaque and tartar build-up." },
+      { name: "Dental Fillings", description: "High-quality, tooth-colored restorations for cavities." },
+      { name: "Tooth Extraction", description: "Safe and gentle removal of problematic teeth." },
+      { name: "Root Canal Therapy", description: "Expert treatment to save infected or badly decayed teeth." },
+      { name: "Preventive Education", description: "Guidance on brushing, flossing, and diet for lasting oral health." }
+    ],
+    whyUs: [
+      { point: "Conveniently located near Arsi University" },
+      { point: "Affordable student and family care packages" },
+      { point: "Strict sterilization and hygiene protocols" },
+      { point: "Easy WhatsApp booking system" }
+    ],
+    testimonials: [
+      { name: "Netsanet M.", stars: 5, text: "Dr. Dawit is incredibly gentle. I had a filling done and didn't feel a thing!" },
+      { name: "Kibrom T.", stars: 4, text: "Great clinic right near the campus. Very easy to schedule an appointment between classes." },
+      { name: "Genet A.", stars: 5, text: "The staff is so friendly and the clinic is spotless. Highly recommended." }
+    ],
+    faq: [
+      { q: "Do you offer discounts for students?", a: "Yes, we offer special rates for Arsi University students with a valid ID." },
+      { q: "Can I book a same-day appointment?", a: "We accept walk-ins, but we recommend sending a WhatsApp message to secure a specific time slot." },
+      { q: "Do you do cosmetic dentistry?", a: "We focus primarily on general and restorative dentistry, including tooth-colored fillings and cleanings." },
+      { q: "Is the clinic accessible by public transport?", a: "Yes, we are right on the main road near the university gates, easily accessible by bajaj." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "arsi-smiles-dental": {
+    slug: "arsi-smiles-dental",
+    name: "Arsi Smiles Dental Clinic",
+    tagline: "Modern Dentistry in the Heart of Assela.",
+    address: "Central Market Area, Assela, Ethiopia",
+    city: "Assela",
+    phone: "+251 92 234 5678",
+    whatsapp: "251922345678",
+    rating: "4.9",
+    email: "hello@arsismiles.com",
+    hours: "Mon-Sat: 8:30 AM - 6:30 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Assela+Market&output=embed",
+    accentColor: "#8B5CF6",
+    accentColorLight: "#EDE9FE",
+    doctor: {
+      name: "Dr. Mahlet",
+      credentials: "DMD — Cosmetic & Restorative Dentistry",
+      bio: "Dr. Mahlet combines artistic vision with advanced dental techniques to give her patients the confident, healthy smiles they deserve.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Mahlet"
+    },
+    services: [
+      { name: "Teeth Whitening", description: "Professional bleaching treatments for a noticeably brighter smile." },
+      { name: "Dental Crowns", description: "Durable, natural-looking caps to restore damaged or broken teeth." },
+      { name: "Cosmetic Fillings", description: "Seamless, tooth-colored restorations that blend perfectly." },
+      { name: "General Checkups", description: "Comprehensive evaluations to maintain optimal oral health." },
+      { name: "Teeth Cleaning", description: "Thorough plaque and tartar removal for healthy gums." },
+      { name: "Dentures", description: "Custom-fitted removable prosthetics for missing teeth." }
+    ],
+    whyUs: [
+      { point: "Specialized in cosmetic smile improvements" },
+      { point: "Located right in the bustling central market area" },
+      { point: "Modern clinic environment with comfortable seating" },
+      { point: "Quick and responsive WhatsApp booking" }
+    ],
+    testimonials: [
+      { name: "Eyerusalem W.", stars: 5, text: "I came in for teeth whitening before my wedding and the results were amazing! Thank you, Dr. Mahlet." },
+      { name: "Samuel B.", stars: 5, text: "Very professional and clean. The best dental clinic in Assela." },
+      { name: "Tewodros K.", stars: 4, text: "A bit busy because of the market location, but the care is top-notch." }
+    ],
+    faq: [
+      { q: "How long does teeth whitening take?", a: "Our in-office treatment takes about 60 minutes and yields immediate results." },
+      { q: "Do you make custom dentures?", a: "Yes, we provide both partial and full custom-fitted dentures." },
+      { q: "Do I need an appointment?", a: "Due to high demand, we strongly encourage booking your appointment via WhatsApp beforehand." },
+      { q: "Do you treat children?", a: "Yes, we welcome patients of all ages." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "chilalo-dental-center": {
+    slug: "chilalo-dental-center",
+    name: "Chilalo Dental Center",
+    tagline: "Elevating Dental Care Standards.",
+    address: "Bokoji Road, Near the Roundabout, Assela, Ethiopia",
+    city: "Assela",
+    phone: "+251 93 345 6789",
+    whatsapp: "251933456789",
+    rating: "4.7",
+    email: "info@chilalodental.com",
+    hours: "Mon-Sat: 8:00 AM - 7:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Assela+Roundabout&output=embed",
+    accentColor: "#F59E0B",
+    accentColorLight: "#FEF3C7",
+    doctor: {
+      name: "Dr. Girma",
+      credentials: "DDS — Oral Surgery & Implantology",
+      bio: "Dr. Girma brings advanced surgical expertise to Assela, providing complex extractions and implant solutions with a focus on patient comfort.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Girma"
+    },
+    services: [
+      { name: "Oral Surgery", description: "Safe and efficient surgical removal of impacted wisdom teeth." },
+      { name: "Dental Implants", description: "Permanent, secure replacements for missing teeth." },
+      { name: "Emergency Dental", description: "Immediate care for severe pain, trauma, and infections." },
+      { name: "Root Canal Therapy", description: "Advanced endodontic care to relieve pain and save teeth." },
+      { name: "Teeth Cleaning", description: "Thorough scaling to maintain healthy gums." },
+      { name: "General Consultations", description: "Comprehensive planning for complex dental needs." }
+    ],
+    whyUs: [
+      { point: "Specialist in complex surgical procedures" },
+      { point: "Equipped with advanced diagnostic imaging" },
+      { point: "Dedicated emergency response during business hours" },
+      { point: "Clear, transparent communication of treatment plans" }
+    ],
+    testimonials: [
+      { name: "Aman T.", stars: 5, text: "Had my wisdom tooth removed by Dr. Girma. He is incredibly skilled and the healing process was very fast." },
+      { name: "Lulit H.", stars: 5, text: "The clinic is very modern. I felt like I was in great hands during my root canal." },
+      { name: "Dereje S.", stars: 4, text: "Excellent surgical care right here in Assela. Very reliable." }
+    ],
+    faq: [
+      { q: "Do you handle dental emergencies?", a: "Yes, we prioritize patients experiencing severe pain or dental trauma." },
+      { q: "Is wisdom tooth extraction painful?", a: "We use effective local anesthesia to ensure the procedure is completely painless." },
+      { q: "Do you place implants?", a: "Yes, Dr. Girma specializes in the surgical placement of dental implants." },
+      { q: "Do I need a referral to see Dr. Girma?", a: "No referral is needed. You can book directly with us via WhatsApp." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "central-assela-dental": {
+    slug: "central-assela-dental",
+    name: "Central Assela Dental",
+    tagline: "Gentle Care for Growing Smiles.",
+    address: "Kebele 02, Near the Main Bus Station, Assela, Ethiopia",
+    city: "Assela",
+    phone: "+251 94 456 7890",
+    whatsapp: "251944567890",
+    rating: "4.8",
+    email: "care@centralassela.com",
+    hours: "Mon-Sat: 8:00 AM - 6:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Assela+Bus+Station&output=embed",
+    accentColor: "#EC4899",
+    accentColorLight: "#FCE7F3",
+    doctor: {
+      name: "Dr. Helen",
+      credentials: "DMD — Pediatric & Family Dentistry",
+      bio: "Passionate about children's oral health, Dr. Helen creates a fun, anxiety-free environment to teach kids lifelong healthy habits.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Helen"
+    },
+    services: [
+      { name: "Pediatric Dentistry", description: "Specialized, gentle dental care designed just for kids." },
+      { name: "Fluoride Treatments", description: "Protecting young teeth from cavities and decay." },
+      { name: "Family Checkups", description: "Convenient routine exams for both parents and children." },
+      { name: "Dental Sealants", description: "Preventative coatings applied to the chewing surfaces of back teeth." },
+      { name: "Teeth Cleaning", description: "Gentle plaque removal and polishing." },
+      { name: "Dental Fillings", description: "Tooth-colored restorations for cavities of all sizes." }
+    ],
+    whyUs: [
+      { point: "Child-friendly waiting area and treatment rooms" },
+      { point: "Emphasis on preventative care and education" },
+      { point: "Easily accessible location near the bus station" },
+      { point: "Patient, caring staff trained to handle dental anxiety" }
+    ],
+    testimonials: [
+      { name: "Tadesse W.", stars: 5, text: "Dr. Helen is amazing with kids! My daughter used to cry at the dentist, but now she looks forward to going." },
+      { name: "Biftu M.", stars: 5, text: "A wonderful family clinic. We all get our checkups done here on the same day." },
+      { name: "Hana Z.", stars: 4, text: "Very convenient location and they are great at communicating via WhatsApp." }
+    ],
+    faq: [
+      { q: "At what age should I bring my child in?", a: "We recommend a first visit by their first birthday, or when their first tooth appears." },
+      { q: "Do you treat adults too?", a: "Yes! While we specialize in kids, we offer comprehensive family dentistry for parents as well." },
+      { q: "How do I book for multiple family members?", a: "Simply send us a WhatsApp message with the names and we will find a block of time for you." },
+      { q: "Are dental sealants necessary?", a: "They are a highly effective, painless way to prevent cavities in children's molars." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
+
+  "ethio-star-dental-assela": {
+    slug: "ethio-star-dental-assela",
+    name: "Ethio-Star Dental Assela",
+    tagline: "Your Smile, Reimagined.",
+    address: "Near Assela Hospital, Assela, Ethiopia",
+    city: "Assela",
+    phone: "+251 95 567 8901",
+    whatsapp: "251955678901",
+    rating: "4.9",
+    email: "appointments@ethiostardental.com",
+    hours: "Mon-Sat: 8:00 AM - 7:30 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Assela+Hospital&output=embed",
+    accentColor: "#0284C7",
+    accentColorLight: "#E0F2FE",
+    doctor: {
+      name: "Dr. Yoseph",
+      credentials: "DDS — Prosthodontics & Restorative Dentistry",
+      bio: "Dr. Yoseph is committed to restoring full functionality and aesthetics to his patients' smiles, utilizing the latest restorative materials and techniques.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Yoseph"
+    },
+    services: [
+      { name: "Crowns & Bridges", description: "Precision-crafted restorations to replace and protect teeth." },
+      { name: "Dentures", description: "Comfortable, functional full and partial dentures." },
+      { name: "Root Canal Therapy", description: "Expert treatment to salvage severely damaged teeth." },
+      { name: "Teeth Cleaning", description: "Professional scaling to keep your smile bright and healthy." },
+      { name: "Tooth Extraction", description: "Safe extractions, including problematic wisdom teeth." },
+      { name: "Smile Makeovers", description: "Comprehensive plans combining multiple treatments for a perfect smile." }
+    ],
+    whyUs: [
+      { point: "Located securely near Assela General Hospital" },
+      { point: "Expertise in full mouth restorations and prosthetics" },
+      { point: "Extended evening hours to fit your schedule" },
+      { point: "Digital record keeping for efficient care" }
+    ],
+    testimonials: [
+      { name: "Fikre T.", stars: 5, text: "Dr. Yoseph fixed a bridge for me that had been bothering me for years. It feels completely natural now." },
+      { name: "Meaza K.", stars: 5, text: "Excellent service and very clean facilities. The late closing time is incredibly helpful for my work schedule." },
+      { name: "Dawit G.", stars: 4, text: "Highly professional. Booking via WhatsApp was fast and they confirmed right away." }
+    ],
+    faq: [
+      { q: "Do you stay open late?", a: "Yes, we are open until 7:30 PM to accommodate patients after work." },
+      { q: "How long does a dental bridge take to make?", a: "Typically, it requires two visits separated by a week or two while the custom bridge is crafted." },
+      { q: "Is the clinic near the main hospital?", a: "Yes, we are located just a short walk from Assela General Hospital." },
+      { q: "Do I need an appointment?", a: "We strongly recommend booking ahead via WhatsApp to ensure zero waiting time." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive dental care for every smile." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
   }
 
 }
