@@ -59,8 +59,8 @@ export default function FindUs({ clinic }) {
                   size="sm"
                   className="rounded-full bg-white px-4 text-navy hover:bg-white/90"
                 >
-                  <a href={`https://wa.me/${clinic.whatsapp}`} target="_blank" rel="noopener noreferrer">
-                    {whatsappUs}
+                  <a href={`https://t.me/+${clinic.whatsapp}`} target="_blank" rel="noopener noreferrer">
+                    Telegram Us
                   </a>
                 </Button>
               </div>
