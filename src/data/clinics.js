@@ -88,7 +88,91 @@ export const CLINICS = {
       footer: { siteBy: "Site by ", previewNote: "Preview demo." }
     }
 },
-
+ "hamdi-clinic": {
+    slug: "hamdi-clinic",
+    name: "Hamdi Clinic",
+    tagline: "Caring for You, Every Step of the Way.",
+    address: "Bole Behind Afnan Building, Adama, Ethiopia",
+    city: "Adama",
+    phone: "+251 93 102 1530", 
+    whatsapp: "251931021530",
+    rating: "5",
+    email: "info@hamdiclinic.com",
+    hours: "Mon-Sun: Open until 8:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Hamdi+Clinic,Adama,Ethiopia&output=embed",
+    accentColor: "#059669", /* A medical green */
+    accentColorLight: "#D1FAE5",
+    doctor: {
+      name: "Medical Team at Hamdi Clinic",
+      credentials: "General, Pediatric & Maternal Care Experts",
+      bio: "Our dedicated team of professionals provides comprehensive healthcare services, including outpatient care, pediatrics, maternal care, and on-site laboratory testing for the Adama community.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Hamdi+Clinic+Team"
+    },
+    services: [
+      { name: "General Checkups", description: "Comprehensive outpatient services and general family health consultations." },
+      { name: "Pediatric Care", description: "Specialized, compassionate medical care for infants, children, and adolescents." },
+      { name: "Maternal Care", description: "Dedicated maternal healthcare services supporting mothers at every stage." },
+      { name: "Laboratory Services", description: "Accurate and timely on-site diagnostic testing to support your treatment." }
+    ],
+    whyUs: [
+      { point: "Trusted healthcare provider in the heart of Adama" },
+      { point: "Comprehensive care for the whole family under one roof" },
+      { point: "On-site laboratory for fast and reliable test results" },
+      { point: "Conveniently located behind the Afnan Building" }
+    ],
+    testimonials: [
+      { name: "Abebech T.", stars: 5, text: "Excellent maternal care. The staff made me feel so comfortable and well taken care of." },
+      { name: "Dawit M.", stars: 5, text: "Very professional team. We always bring our kids here for their checkups." },
+      { name: "Hiwot A.", stars: 4, text: "Clean facility with a quick and efficient lab service. Highly recommended." }
+    ],
+    faq: [
+      { q: "What are your operating hours?", a: "We are open daily and close at 8:00 PM." },
+      { q: "Do you offer services for children?", a: "Yes, we have a dedicated pediatric department to take care of your children's health needs." },
+      { q: "Where exactly are you located?", a: "We recently moved to a new location in Adama, Bole, right behind the Afnan Building." },
+      { q: "Can I get my lab tests done there?", a: "Absolutely. We have a fully equipped laboratory on-site for your convenience." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Our Team",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive medical care for you and your family." },
+        doctor: { eyebrow: "Meet Your Healthcare Team" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I would like to book an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Department",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a department",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a department" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
   "ana-speciality-dental": {
     slug: "ana-speciality-dental",
     name: "Ana Speciality Dental Clinic",
