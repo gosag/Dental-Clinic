@@ -18,9 +18,6 @@ const item = {
 
 // Male Black doctor at work — reads as welcoming and general-purpose
 // rather than dental-specific.
-const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80"
-
 export default function Hero({ clinic }) {
   return (
     <section
@@ -128,7 +125,7 @@ export default function Hero({ clinic }) {
             className="relative aspect-4/5 overflow-hidden rounded-[1.75rem] shadow-xl ring-1 ring-black/5"
           >
             <img
-              src={HERO_IMAGE}
+              src="/hero-doctor.png"
               alt={`Doctor at ${clinic.name} ready to care for patients`}
               className="h-full w-full object-cover object-top"
             />
