@@ -16,8 +16,10 @@ const item = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 }
 
+// Male Black doctor at work — reads as welcoming and general-purpose
+// rather than dental-specific.
 const HERO_IMAGE =
-  "https://images.unsplash.com/photo-1548382131-e0ebb1f0cdea?auto=format&fit=crop&w=1200&q=80"
+  "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80"
 
 export default function Hero({ clinic }) {
   return (
@@ -44,7 +46,7 @@ export default function Hero({ clinic }) {
             className="mx-auto mb-5 inline-flex items-center gap-1.5 rounded-full border border-navy/10 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-navy/70 shadow-sm lg:mx-0"
           >
             <Smile className="size-3.5 text-accent" />
-            Modern Clinic in {clinic.city || "Adama"}
+            Trusted Care in {clinic.city || "Adama"}
           </motion.div>
 
           <motion.h1
@@ -58,7 +60,7 @@ export default function Hero({ clinic }) {
             variants={item}
             className="mx-auto mt-5 max-w-md text-base leading-relaxed text-navy/60 sm:text-lg lg:mx-0"
           >
-            {clinic.tagline || "Comfortable, modern dentistry for your whole family."}
+            {clinic.tagline || "Compassionate, modern care for you and your family."}
           </motion.p>
 
           <motion.div
@@ -82,13 +84,12 @@ export default function Hero({ clinic }) {
                 className="h-12 w-full rounded-full border border-navy/15 bg-white px-8 font-semibold text-navy hover:bg-navy/5 sm:w-auto"
               >
                 <a
-                
                   href={`https://t.me/+${clinic.whatsapp}`}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <MessageCircle className="mr-2 size-5 text-accent" />
-                       Telegram Us  
+                  Telegram Us
                 </a>
               </Button>
             </motion.div>
@@ -117,22 +118,19 @@ export default function Hero({ clinic }) {
           transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
           className="relative mx-auto w-full max-w-sm lg:max-w-none"
         >
-          {/* offset accent card behind photo — the crafted, human detail */}
-          <div
-            className="absolute inset-0 -rotate-3 bg-accent/25"
-            style={{ borderRadius: "62% 38% 55% 45% / 55% 45% 60% 40%" }}
-          />
+          {/* offset accent panel behind photo — the crafted, human detail */}
+          <div className="absolute -inset-3 -rotate-2 rounded-[2rem] bg-accent/15" />
+          <div className="absolute -inset-3 rotate-1 rounded-[2rem] border-2 border-accent/20" />
 
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-            className="relative aspect-4/5 overflow-hidden shadow-xl"
-            style={{ borderRadius: "62% 38% 55% 45% / 55% 45% 60% 40%" }}
+            className="relative aspect-4/5 overflow-hidden rounded-[1.75rem] shadow-xl ring-1 ring-black/5"
           >
             <img
               src={HERO_IMAGE}
-              alt={`Smiling patient at ${clinic.name}`}
-              className="h-full w-full object-cover"
+              alt={`Doctor at ${clinic.name} ready to care for patients`}
+              className="h-full w-full object-cover object-top"
             />
           </motion.div>
 
