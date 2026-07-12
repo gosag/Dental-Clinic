@@ -44,7 +44,7 @@ export default function Hero({ clinic }) {
             className="mx-auto mb-5 inline-flex items-center gap-1.5 rounded-full border border-navy/10 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-navy/70 shadow-sm lg:mx-0"
           >
             <Smile className="size-3.5 text-accent" />
-            Modern dental care in {clinic.city || "Adama"}
+            Modern Clinic in {clinic.city || "Adama"}
           </motion.div>
 
           <motion.h1
