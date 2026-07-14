@@ -17,6 +17,7 @@ function scrollTo(id) {
 
 export default function Navbar({ clinic }) {
   const [open, setOpen] = useState(false)
+  const [pendingScrollId, setPendingScrollId] = useState(null)
   const { scrollY } = useScroll()
   const boxShadow = useTransform(
     scrollY,
@@ -28,6 +29,26 @@ export default function Navbar({ clinic }) {
     id,
     label: clinic.ui.nav[key],
   }))
+
+  // Called by AnimatePresence once the mobile menu has fully collapsed.
+  const handleExitComplete = () => {
+    if (pendingScrollId) {
+      scrollTo(pendingScrollId)
+      setPendingScrollId(null)
+    }
+  }
+
+  // Desktop links scroll immediately (no menu to close first).
+  const handleDesktopNavClick = (id) => {
+    scrollTo(id)
+  }
+
+  // Mobile links close the menu first, then scroll once the
+  // collapse animation has actually finished (see handleExitComplete).
+  const handleMobileNavClick = (id) => {
+    setPendingScrollId(id)
+    setOpen(false)
+  }
 
   return (
     <motion.nav
@@ -42,7 +63,7 @@ export default function Navbar({ clinic }) {
           aria-label={clinic.name}
         >
           <span className="block font-display text-xl font-bold bg-linear-to-r from-navy to-accent bg-clip-text text-transparent">
-          {clinic.name}
+            {clinic.name}
           </span>
         </button>
 
@@ -51,7 +72,7 @@ export default function Navbar({ clinic }) {
             <button
               key={id}
               type="button"
-              onClick={() => scrollTo(id)}
+              onClick={() => handleDesktopNavClick(id)}
               className="group relative text-sm font-medium text-gray-600 transition-colors duration-200 hover:text-accent"
             >
               {label}
@@ -79,7 +100,7 @@ export default function Navbar({ clinic }) {
         </div>
       </div>
 
-      <AnimatePresence>
+      <AnimatePresence onExitComplete={handleExitComplete}>
         {open && (
           <motion.div
             initial={{ height: 0, opacity: 0 }}
@@ -93,10 +114,7 @@ export default function Navbar({ clinic }) {
                 <motion.button
                   key={id}
                   type="button"
-                  onClick={() => {
-                    scrollTo(id)
-                    setOpen(false)
-                  }}
+                  onClick={() => handleMobileNavClick(id)}
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.05 }}
@@ -113,10 +131,7 @@ export default function Navbar({ clinic }) {
               >
                 <Button
                   className="h-10 w-full rounded-full bg-linear-to-r from-accent to-accent/80 font-semibold text-white transition-all duration-200 hover:shadow-lg hover:shadow-accent/30"
-                  onClick={() => {
-                    scrollTo("book")
-                    setOpen(false)
-                  }}
+                  onClick={() => handleMobileNavClick("book")}
                 >
                   {clinic.ui.nav.bookNow}
                 </Button>
