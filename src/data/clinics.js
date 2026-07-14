@@ -1,6 +1,104 @@
 // Centralized clinic configurations for multi-tenant dental clinic preview system
-
+  
 export const CLINICS = {
+  "wada-clinic": {
+    slug: "wada-clinic",
+    name: "WADA CLINIC",
+    tagline: "Compassionate, 24/7 medical care for the Adama community.",
+    address: "Kulefa, G7RG+CM, Adama, Ethiopia",
+    phone: "+251 91 443 9363",
+    whatsapp: "251914439363",
+    email: "contact@wadaclinic.com",
+    hours: "Open 24 hours",
+    mapEmbedUrl: "https://maps.google.com/maps?q=WADA+CLINIC,Adama&output=embed",
+    accentColor: "#0369A1",
+    accentColorLight: "#E0F2FE",
+
+    doctor: {
+      name: "Dr. Wada",
+      credentials: "MD — General Medicine",
+      bio: "Committed to delivering high-quality, accessible healthcare to our community, day or night.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Wada",
+    },
+
+    services: [
+      { name: "General Practice", description: "Comprehensive health evaluations and treatment for acute and chronic conditions." },
+      { name: "Emergency Care", description: "24/7 medical attention for urgent health issues and minor injuries." },
+      { name: "Pediatric Care", description: "Dedicated and gentle medical care tailored for infants, children, and adolescents." },
+      { name: "Laboratory Services", description: "On-site diagnostics for fast and accurate test results." },
+      { name: "Maternal Health", description: "Prenatal and postnatal care to support healthy mothers and babies." },
+      { name: "Minor Surgery", description: "Safe and sterile minor surgical procedures performed by experienced doctors." },
+    ],
+
+    whyUs: [
+      { point: "Open 24/7 for all your medical needs" },
+      { point: "Highly rated by our local community" },
+      { point: "Conveniently located in Kulefa, Adama" },
+      { point: "Comprehensive care from diagnostics to treatment" },
+    ],
+
+    testimonials: [
+      { name: "M/nur Abduro", stars: 5, text: "Excellent institution. The care I received was prompt and very professional." },
+      { name: "Nura Gudeta", stars: 5, text: "MashaAllah. A great clinic that truly cares about its patients." },
+      { name: "Bisrat Fikadu", stars: 5, text: "Top-tier service. The staff is welcoming and the doctors are very knowledgeable." },
+    ],
+
+    faq: [
+      { q: "Are you open on public holidays?", a: "Yes, we are open 24 hours a day, 7 days a week, including all public holidays." },
+      { q: "Do you have an on-site laboratory?", a: "Yes, we have a fully equipped laboratory for quick and reliable diagnostic testing." },
+      { q: "Do I need an appointment to see a doctor?", a: "Walk-ins are always welcome, especially for emergencies. However, you can book an appointment to avoid waiting." },
+      { q: "What should I bring for my visit?", a: "Please bring a valid ID and any relevant medical records or current medications." },
+    ],
+
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu",
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: {
+          title: "Our Medical Services",
+          subtitle: "Comprehensive healthcare for you and your family.",
+        },
+        doctor: { eyebrow: "Meet the Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment",
+        },
+        reviews: { title: "Patient Experiences" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" },
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: {
+          name: "Name is required",
+          phone: "Phone is required",
+          service: "Please select a service",
+        },
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." },
+    },
+  },
   "hundaol-dental": {
     slug: "hundaol-dental",
     name: "Hundaol Dental Clinic",

@@ -589,17 +589,6 @@ function Footer() {
  const newClinic = Object.values(CLINICS).filter(clinic => clinic.name && clinic.slug);
   const year = new Date().getFullYear()
   const isAdmin = localStorage.getItem("isAdmin") === "true";
-  useEffect(() => {
-    if (isAdmin) {
-      console.log("Admin mode enabled. Clinics with names and slugs:");
-      if(newClinic.length === 0){
-        console.log("No clinics with names and slugs found.");
-      }
-      newClinic.forEach((clinic) => {
-        console.log(`Clinic Name: ${clinic.name}, Slug: ${clinic.slug}`);
-      });
-    }
-  }, [isAdmin])
   return (
     <footer className="py-8" style={{ background: "#070D17", borderTop: "1px solid rgba(95,211,218,0.10)" }}>
      
