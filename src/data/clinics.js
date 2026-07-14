@@ -1,6 +1,94 @@
 // Centralized clinic configurations for multi-tenant dental clinic preview system
   
 export const CLINICS = {
+  "beza-medium-clinic": {
+    slug: "beza-medium-clinic",
+    name: "Beza Medium Clinic",
+    tagline: "Expert Orthopedic & General Medical Care.",
+    address: "Near Adama University, Adama, Ethiopia",
+    city: "Adama",
+    phone: "+251 919 610 151", // Placeholder phone
+    whatsapp: "251919610151",
+    mobile: "0919610151",
+    rating: "5.0",
+    email: "contact@bezaclinic.com",
+    hours: "Mon-Sun: 24 Hours",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Adama+University,Adama&output=embed",
+    accentColor: "#2563EB", // Medical Blue
+    accentColorLight: "#DBEAFE",
+    doctor: {
+      name: "Dr. Dawit",
+      credentials: "MD — Orthopedics & General Medicine",
+      bio: "Dedicated to providing high-quality orthopedic evaluations and general medical care to the Adama community, with a strong focus on accurate diagnosis and compassionate treatment.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Dawit"
+    },
+    services: [
+      { name: "Orthopedic Consultations", description: "Expert evaluation and management of bone, joint, and muscle conditions." },
+      { name: "General Outpatient Care", description: "Comprehensive medical checkups and treatment for common illnesses." },
+      { name: "Minor Surgical Procedures", description: "Safe and sterile minor surgeries, including suturing and wound care." },
+      { name: "Laboratory & Diagnostics", description: "On-site lab testing for quick and accurate medical results." },
+      { name: "Emergency Care", description: "Immediate medical attention for urgent, non-life-threatening injuries." },
+      { name: "Pharmacy Services", description: "In-house dispensary for convenient access to prescribed medications." }
+    ],
+    whyUs: [
+      { point: "Conveniently located near Adama University" },
+      { point: "Specialized focus on orthopedic treatments and physical trauma" },
+      { point: "5.0 star rated patient care and spotless facilities" },
+      { point: "Comprehensive diagnostic laboratory right on-site" }
+    ],
+    testimonials: [
+      { name: "Girma B.", stars: 5, text: "Excellent orthopedic care. The doctor explained my joint pain clearly and prescribed an effective treatment." },
+      { name: "Chaltu A.", stars: 5, text: "Very clean clinic and professional staff. Being so close to the university makes it very accessible." },
+      { name: "Amanuel T.", stars: 5, text: "Quick service for my lab tests and the results were ready very fast. Highly recommend Beza Clinic." }
+    ],
+    faq: [
+      { q: "Do you handle bone fractures and joint pain?", a: "Yes, we specialize in orthopedic care and can evaluate, stabilize, and treat various musculoskeletal issues." },
+      { q: "Is your laboratory open every day?", a: "Yes, our on-site laboratory operates daily to provide rapid test results for our patients." },
+      { q: "Do I need an appointment to see the doctor?", a: "Walk-ins are always welcome, especially for urgent care, but you can book ahead via WhatsApp to minimize waiting time." },
+      { q: "Do you accept university students?", a: "Absolutely. Our location near Adama University makes us a convenient choice for students needing medical attention." }
+    ],
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu"
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: { title: "Our Services", subtitle: "Comprehensive medical care you can trust." },
+        doctor: { eyebrow: "Meet Your Doctor" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book an Appointment",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment"
+        },
+        reviews: { title: "What Our Patients Say" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" }
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: { name: "Name is required", phone: "Phone is required", service: "Please select a service" }
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." }
+    }
+  },
   "wada-clinic": {
     slug: "wada-clinic",
     name: "WADA CLINIC",
