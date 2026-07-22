@@ -1,6 +1,104 @@
 // Centralized clinic configurations for multi-tenant dental clinic preview system
   
 export const CLINICS = {
+  "noah-specialty-center": {
+    slug: "noah-specialty-center",
+    name: "Noah Specialty center",
+    tagline: "Exceptional specialized care for mothers, children, and surgical needs.",
+    address: "G7WG+446, Adama, Ethiopia",
+    phone: "+251 93 540 3948",
+    whatsapp: "251935403948",
+    email: "info@noahspecialty.com",
+    hours: "Mon-Sun: 8:00 AM - 8:00 PM",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Noah+Specialty+center,Adama&output=embed",
+    accentColor: "#8B5CF6",
+    accentColorLight: "#EDE9FE",
+
+    doctor: {
+      name: "Dr. Dawit T.",
+      credentials: "MD — Chief Specialist & Surgeon",
+      bio: "Dedicated to providing advanced surgical and specialized care with a compassionate approach, ensuring the highest standards of safety and recovery.",
+      photo: "https://placehold.co/400x400/eeeeee/31343c?text=Dr.+Dawit",
+    },
+
+    services: [
+      { name: "General Surgery", description: "Expert surgical procedures including appendectomies and cholecystectomies." },
+      { name: "Maternity Care", description: "Specialized, comprehensive care for expecting mothers from prenatal to postpartum." },
+      { name: "Pediatric Services", description: "Dedicated pediatric features and treatments designed specifically for children's well-being." },
+      { name: "Specialized Diagnostics", description: "Advanced screening and diagnostic testing tailored to complex medical needs." },
+      { name: "Inpatient Care", description: "Comfortable, fully-equipped recovery rooms with 24/7 nursing support." },
+      { name: "Women's Health", description: "Comprehensive gynecological services and routine wellness exams." },
+    ],
+
+    whyUs: [
+      { point: "Highly praised surgical expertise" },
+      { point: "Special features exclusively for mothers and children" },
+      { point: "Modern facility located centrally in Adama" },
+      { point: "Rated 4.4 stars by our community" },
+    ],
+
+    testimonials: [
+      { name: "Chere Zeynu", stars: 5, text: "I recently had a cholecystectomy at Noah Specialty Center, and I cannot praise them enough for the exceptional care I received." },
+      { name: "Bruk Mulgeta", stars: 5, text: "It has special features for mothers and children." },
+      { name: "Kalu", stars: 5, text: "Love it. Excellent facility and staff." },
+    ],
+
+    faq: [
+      { q: "Do you offer maternity services?", a: "Yes, we have specialized features, equipment, and staff dedicated specifically to mothers and children." },
+      { q: "What types of surgeries do you perform?", a: "We perform a variety of specialized and general surgeries, including cholecystectomies. Contact us for a full consultation." },
+      { q: "Where are you located?", a: "We are located at G7WG+446 in Adama. You can find our exact location on Google Maps." },
+      { q: "How can I book a consultation?", a: "You can reach us directly at 093 540 3948 or send us a message on WhatsApp to schedule an appointment." },
+    ],
+
+    ui: {
+      demo: { badge: "DEMO", previewPrefix: "Preview site built for" },
+      developer: { name: "Gosa Girma", url: "https://gosagirma.me" },
+      nav: {
+        services: "Services",
+        doctor: "Doctor",
+        reviews: "Reviews",
+        book: "Book",
+        findUs: "Find Us",
+        bookNow: "Book Now",
+        openMenu: "Open menu",
+        closeMenu: "Close menu",
+      },
+      hero: { callNow: "Call Now", whatsappUs: "WhatsApp Us" },
+      sections: {
+        services: {
+          title: "Specialized Medical Services",
+          subtitle: "Advanced care tailored for you and your family.",
+        },
+        doctor: { eyebrow: "Meet the Specialist" },
+        whyUs: { title: "Why Choose Us" },
+        book: {
+          title: "Book a Consultation",
+          submit: "Request Appointment →",
+          successThanks: "Thanks, {name}!",
+          successMessage: "We'll confirm your appointment via WhatsApp within 2 hours.",
+          openWhatsapp: "Open WhatsApp",
+          whatsappPrefill: "Hi, I just booked an appointment",
+        },
+        reviews: { title: "Patient Experiences" },
+        faq: { title: "Frequently Asked Questions" },
+        findUs: { title: "Find Us", whatsappUs: "WhatsApp Us" },
+      },
+      form: {
+        name: "Full Name",
+        phone: "Phone Number",
+        service: "Service",
+        date: "Preferred Date",
+        message: "Message",
+        selectService: "Select a service",
+        errors: {
+          name: "Name is required",
+          phone: "Phone is required",
+          service: "Please select a service",
+        },
+      },
+      footer: { siteBy: "Site by ", previewNote: "Preview demo." },
+    },
+  },
   "beza-medium-clinic": {
     slug: "beza-medium-clinic",
     name: "Beza Medium Clinic",
