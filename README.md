@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+A react + Typescript web app made for clinics to serve as a demo website. # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
