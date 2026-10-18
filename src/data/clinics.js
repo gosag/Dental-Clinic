@@ -2,9 +2,9 @@
   
 export const CLINICS = {
   
-  "hundaol-dental": {
-    slug: "hundaol-dental",
-    name: "Hundaol Dental Clinic",
+  "dental-clinic": {
+    slug: "dental-clinic",
+    name: "Dental Clinic",
     tagline: "Exceptional Dental Care in the Heart of Adama.",
     address: "Main Highway (Near the Old Post Office / Posta Bet), Kebele 02, Adama, Ethiopia",
     city: "Adama",
