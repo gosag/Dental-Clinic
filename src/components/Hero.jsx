@@ -125,7 +125,7 @@ export default function Hero({ clinic }) {
             className="relative aspect-4/5 overflow-hidden rounded-[1.75rem] shadow-xl ring-1 ring-black/5"
           >
             <img
-              src="/hero-doctor.png"
+              src="/smilling.webp"
               alt={`Doctor at ${clinic.name} ready to care for patients`}
               className="h-full w-full object-cover object-top"
             />
