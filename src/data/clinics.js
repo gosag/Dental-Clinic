@@ -2,7 +2,7 @@
   
 export const CLINICS = {
   
-  "dental-clinic": {
+"dental-clinic": {
   slug: "dental-clinic",
   name: "Family Dental Clinic",
   tagline: "Exceptional Dental Care in the Heart of Adama.",
