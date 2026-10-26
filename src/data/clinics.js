@@ -4,7 +4,7 @@ export const CLINICS = {
   
 "dental-clinic": {
   slug: "dental-clinic",
-  name: "Family Dental Clinic",
+  name: "Adama Dental Clinic",
   tagline: "Exceptional Dental Care in the Heart of Adama.",
   address: "Mebrat Haile, Kebele 02, Adama, Ethiopia",
   city: "Adama",
