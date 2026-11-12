@@ -11,6 +11,8 @@ const navItems = [
   { key: "findUs", id: "find-us" },
 ]
 
+const languages = ["Amh", "Eng", "Oro"]
+
 function scrollTo(id) {
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth" })
 }
@@ -82,6 +84,25 @@ export default function Navbar({ clinic }) {
         </div>
 
         <div className="flex items-center gap-3">
+          <div
+            className="flex items-center gap-0.5 rounded-full bg-slate-100 p-1"
+            aria-label="Language selection"
+          >
+            {languages.map((language) => (
+              <button
+                key={language}
+                type="button"
+                aria-pressed={language === "Eng"}
+                className={`rounded-full px-2 py-1 text-xs font-semibold transition-colors ${
+                  language === "Eng"
+                    ? "bg-navy text-white shadow-sm"
+                    : "text-gray-500 hover:bg-white hover:text-navy"
+                }`}
+              >
+                {language}
+              </button>
+            ))}
+          </div>
           <Button
             size="sm"
             className="hidden sm:flex rounded-full bg-linear-to-r from-accent to-accent/80 font-semibold text-white shadow-sm transition-all duration-200 hover:shadow-lg hover:shadow-accent/30"
