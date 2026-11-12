@@ -10,6 +10,7 @@ import {
   Sun,
 } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
+import { Button } from "@/components/ui/button"
 
 const icons = [Sparkles, Sun, Scissors, Activity, Smile, Shield]
 const MotionCard = motion.create(Card)
@@ -102,6 +103,16 @@ export default function Services({ clinic }) {
             </MotionCard>
           )
         })}
+      </div>
+
+      <div className="mt-10 flex justify-center">
+        <Button
+          type="button"
+          variant="outline"
+          className="rounded-full border-accent/30 px-6 font-semibold text-accent hover:bg-accent-light hover:text-accent"
+        >
+          All services
+        </Button>
       </div>
     </section>
   )
